@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Planes from './Planes';
-// import SobreMi from './SobreMi';
+import SobreMi from './SobreMi';
 import Testimonios from './Testimonios';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
@@ -18,7 +18,7 @@ const Main = () => {
         <Planes />
       </section>
       <section id="sobre-mi">
-        
+        <SobreMi/>
       </section>
       <section id="testimonios">
         <Testimonios />

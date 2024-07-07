@@ -1,0 +1,91 @@
+/* src/components/main/Inicio.css */
+.inicio-container {
+    background-image: url('../../../images/background.jpg'); /* Asegúrate de poner la ruta correcta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+    padding: 50px;
+    border-radius: 10px;
+  }
+  
+  .title {
+    color: #fff; /* Texto blanco */
+    font-size: 3rem;
+  }
+  
+  .subtitle {
+    color: #ccc; /* Texto blanco */
+    font-size: 1.5rem;
+  }
+  
+  .btn-warning {
+    background-color: #ffc605;
+    border-color: #ffc605;
+  }
+  
+  .btn-outline-warning {
+    color: #ffc605;
+    border-color: #ffc605;
+  }
+  
+  .btn-warning:hover, .btn-outline-warning:hover {
+    background-color: #e5b600;
+    border-color: #e5b600;
+  }
+  
+/* src/components/main/Planes.css */
+.planes-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.highlight {
+  color: #ffc605;
+}
+
+.plan-card {
+  background: linear-gradient(#393939, #000);
+  border: none;
+  border-radius: 10px;
+}
+
+.plan-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.plan-card .card-subtitle {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ffc605;
+}
+
+.plan-card .card-text {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.btn-outline-warning {
+  color: #ffc605;
+  border-color: #ffc605;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc605;
+  color: #000;
+}
