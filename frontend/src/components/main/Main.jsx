@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Planes from './Planes';
 import SobreMi from './SobreMi';
 import Testimonios from './Testimonios';
+import Razones from './Razones';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
 import Inicio from './Inicio';
@@ -19,6 +20,9 @@ const Main = () => {
       </section>
       <section id="sobre-mi">
         <SobreMi/>
+      </section>
+      <section id="razones">
+        <Razones />
       </section>
       <section id="testimonios">
         <Testimonios />

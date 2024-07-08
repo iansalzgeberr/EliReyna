@@ -14,19 +14,19 @@ const NavBar = () => {
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link text-dark nav-underline" href="#inicio">Inicio</a>
+            <a className="nav-link text-dark nav-underline" href="#inicio"><strong>Inicio</strong></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-dark nav-underline" href="#planes">Planes</a>
+            <a className="nav-link text-dark nav-underline" href="#planes"><strong>Planes</strong></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-dark nav-underline" href="#sobre-mi">Sobre Mi</a>
+            <a className="nav-link text-dark nav-underline" href="#sobre-mi"><strong>Sobre Mi</strong></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-dark nav-underline" href="#testimonios">Testimonios</a>
+            <a className="nav-link text-dark nav-underline" href="#testimonios"><strong>Testimonios</strong></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-dark nav-underline" href="#contacto">Contacto</a>
+            <a className="nav-link text-dark nav-underline" href="#contacto"><strong>Contacto</strong></a>
           </li>
         </ul>
       </div>

@@ -89,3 +89,161 @@
   background-color: #ffc605;
   color: #000;
 }
+
+
+
+/* src/components/main/SobreMi.css */
+
+.sobre-mi-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+}
+
+.title-container {
+  align-self: flex-start;
+  margin-bottom: 15px;
+  padding-left: 35px;
+  font-size: 1.5rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+}
+
+.image-container {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 50px;
+}
+
+@media (min-width: 768px) {
+  .image-container {
+      width: auto;
+  }
+}
+
+.text-container {
+  flex: 2;
+  font-size: 1.2rem;
+  line-height: 1.5; /* Reducir el espacio entre líneas */
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 1.9rem;
+}
+
+@media (min-width: 768px) {
+  .text-container {
+      padding-top: 0;
+  }
+}
+
+.title {
+  color: #fff; /* Color blanco */
+}
+
+.highlighted-text {
+  color: yellow; /* Color amarillo */
+}
+
+
+/* src/components/main/Razones.jsx */
+.razones-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 182px 0px 64px 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.razones-title {
+  color: #fff; /* Texto blanco */
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+
+.highlight {
+  color: #ffc605; /* Color amarillo */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+.razones-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(#1a1a1a, #000);
+  border: none;
+  border-radius: 10px;
+  padding: 25px 124px 25px 100px;
+  margin: 54px 550px 0px 185px;
+}
+
+.razones-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.razones-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.razones-text li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.razones-text li:before {
+  content: "•";
+  color: #ffc605;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.razones-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.razones-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .razones-content {
+    flex-direction: row;
+  }
+
+  .razones-images {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .razones-image {
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+}
