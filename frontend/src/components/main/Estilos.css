@@ -333,3 +333,23 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* src/components/RedesSociales.css */
+
+.redes-sociales-container {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.icono {
+  color: #fff;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.icono:hover {
+  color: #ffc605; /* Cambiar el color al pasar el mouse */
+}

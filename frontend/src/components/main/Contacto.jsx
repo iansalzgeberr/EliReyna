@@ -1,11 +1,21 @@
-// src/components/main/Contacto.jsx
+// src/components/RedesSociales.js
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle, faFacebook, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import './Estilos.css';
 
 const Contacto = () => {
   return (
-    <div>
-      <h1>Contáctanos</h1>
-      <p>Contenido de la sección Contacto</p>
+    <div className="redes-sociales-container">
+      <a href="https://google.com" className="icono" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faGoogle} size="2x" />
+      </a>
+      <a href="https://facebook.com" className="icono" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faFacebook} size="2x" />
+      </a>
+      <a href="https://www.instagram.com/elireyna_/" className="icono" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faInstagram} size="2x" />
+      </a>
     </div>
   );
 };
