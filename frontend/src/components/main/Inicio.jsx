@@ -1,7 +1,7 @@
 // src/components/main/Inicio.jsx
 import React from 'react';
 import './Estilos.css'; // Asegúrate de crear este archivo para los estilos adicionales
-import backgroundImage from '../../../images/background.jpg'; // Asegúrate de poner la ruta correcta a tu imagen
+
 
 const Inicio = () => {
   return (
