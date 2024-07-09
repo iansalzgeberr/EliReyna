@@ -1,11 +1,26 @@
-// src/components/main/Testimonios.jsx
+// src/components/Testimonios.js
 import React from 'react';
+import './Estilos.css';
 
 const Testimonios = () => {
+  const testimoniosData = [
+    { usuario: '@nombre_usuario', texto: '“Una entrenadora excelente! A tu lado logré llevar mi físico”' },
+    { usuario: '@nombre_usuario', texto: '“Una entrenadora excelente! A tu lado logré llevar mi físico”' },
+    { usuario: '@nombre_usuario', texto: '“Lucre No solo es una Excelente profesional sino que también es una gran persona, siempre mostrando amor, paciencia y dedicación por lo que hace. Desde que comencé a entrenar...”' },
+    { usuario: '@nombre_usuario', texto: '“Una entrenadora excelente!!! A tu lado logré llevar mi físico y cabeza a una mejor versión... aprendí mucho y sobre todo admiro profundamente tu trabajo”' }
+  ];
+
   return (
-    <div>
-      <h1>Testimonios</h1>
-      <p>Contenido de Testimonios</p>
+    <div className="testimonios-container">
+      <h2>Nuestros <span className="highlight">Testimonios</span></h2>
+      <div className="testimonios-grid">
+        {testimoniosData.map((testimonio, index) => (
+          <div key={index} className="testimonio">
+            <p className="usuario">{testimonio.usuario}</p>
+            <p>{testimonio.texto}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
