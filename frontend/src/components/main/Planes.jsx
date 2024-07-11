@@ -1,9 +1,11 @@
+// src/components/main/Planes.jsx
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Popup from './Popup';
-import './Estilos.css';
 
 const Planes = () => {
   const [selectedPlan, setSelectedPlan] = useState(null);
+  const navigate = useNavigate();
 
   const plans = [
     {
@@ -47,6 +49,10 @@ const Planes = () => {
     setSelectedPlan(plan);
   };
 
+  const handleAcquirePlan = () => {
+    navigate('/formulario');
+  };
+
   const handleClosePopup = () => {
     setSelectedPlan(null);
   };
@@ -58,7 +64,7 @@ const Planes = () => {
         {plans.map((plan, index) => (
           <div key={index} className="col-md-4 mb-4">
             <div className="card text-white h-100" style={{ background: 'none', border: 'none' }}>
-              <div className="card-body d-flex flex-column justify-content-between" style={{ background: 'linear-gradient(180deg, #1c1c1c, #000000)', borderRadius: '10px' }}>
+              <div className="card-body d-flex flex-column justify-content-between" style={{ background: 'linear-gradient(90deg, #1c1c1c, #000000)', borderRadius: '10px' }}>
                 <div className="text-left">
                   <h5 className="card-title mb-3" style={{ fontWeight: 'bold' }}>{plan.title}</h5>
                   <h6 className="card-subtitle mb-3" style={{ fontSize: '1.5em', fontWeight: 'bold' }}>${plan.price}</h6>
@@ -70,12 +76,13 @@ const Planes = () => {
           </div>
         ))}
       </div>
-      {selectedPlan !== null && (
+      {selectedPlan && (
         <Popup
           title={selectedPlan.title}
           content={selectedPlan.content}
           imageSrc={selectedPlan.imageSrc}
           onClose={handleClosePopup}
+          onAcquirePlan={handleAcquirePlan} // Añadir esta prop para manejar la redirección
         />
       )}
     </div>

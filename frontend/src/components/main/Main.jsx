@@ -8,6 +8,7 @@ import Footer from '../Footer';
 import Inicio from './Inicio';
 import Contacto from './Contacto';
 
+
 const Main = () => {
   return (
     <div>
