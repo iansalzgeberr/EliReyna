@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Formulario.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Formulario = () => {
     const [formData, setFormData] = useState({
@@ -55,213 +56,262 @@ const Formulario = () => {
     return (
         <div className="form-container">
             <header className="form-header">
-                <img src="../../../images/logo.png" alt="Eli Reyna Logo" className="form-logo" />
+                <img src="../../../images/logo_negro.png" alt="Eli Reyna Logo" className="form-logo" />
                 <p className="form-subtitle"><strong>Entrenamiento Personalizado</strong></p>
             </header>
-            <div className="form-body">
-                <h2 className="form-heading">Registro de Datos de Salud</h2>
+            <div className="form-body p-4 bg-white shadow rounded">
+                <h2 className="form-heading text-center mb-4">Registro de Datos de Salud</h2>
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor="nombre">Nombre y apellido:</label>
-                    <input 
-                        type="text" 
-                        id="nombre" 
-                        name="nombre" 
-                        value={formData.nombre} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="nombre" className="form-label">Nombre y apellido:</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            value={formData.nombre} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="edad">Edad:</label>
-                    <input 
-                        type="number" 
-                        id="edad" 
-                        name="edad" 
-                        value={formData.edad} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="edad" className="form-label">Edad:</label>
+                        <input 
+                            type="number" 
+                            id="edad" 
+                            name="edad" 
+                            value={formData.edad} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="enfermedadCardiaca">¿Alguna vez ha sido diagnosticado con una enfermedad cardíaca o le han recomendado que solamente realice actividad física bajo supervisión médica?</label>
-                    <input 
-                        type="text" 
-                        id="enfermedadCardiaca" 
-                        name="enfermedadCardiaca" 
-                        value={formData.enfermedadCardiaca} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="enfermedadCardiaca" className="form-label">¿Alguna vez ha sido diagnosticado con una enfermedad cardíaca o le han recomendado que solamente realice actividad física bajo supervisión médica?</label>
+                        <input 
+                            type="text" 
+                            id="enfermedadCardiaca" 
+                            name="enfermedadCardiaca" 
+                            value={formData.enfermedadCardiaca} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="dolorPechoActividadFisica">¿Suele padecer dolores de pecho cuando realiza actividad física?</label>
-                    <input 
-                        type="text" 
-                        id="dolorPechoActividadFisica" 
-                        name="dolorPechoActividadFisica" 
-                        value={formData.dolorPechoActividadFisica} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="dolorPechoActividadFisica" className="form-label">¿Suele padecer dolores de pecho cuando realiza actividad física?</label>
+                        <input 
+                            type="text" 
+                            id="dolorPechoActividadFisica" 
+                            name="dolorPechoActividadFisica" 
+                            value={formData.dolorPechoActividadFisica} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="dolorPechoReposo">¿Ha tenido dolor en el pecho cuando no estaba realizando actividad física?</label>
-                    <input 
-                        type="text" 
-                        id="dolorPechoReposo" 
-                        name="dolorPechoReposo" 
-                        value={formData.dolorPechoReposo} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="dolorPechoReposo" className="form-label">¿Ha tenido dolor en el pecho cuando no estaba realizando actividad física?</label>
+                        <input 
+                            type="text" 
+                            id="dolorPechoReposo" 
+                            name="dolorPechoReposo" 
+                            value={formData.dolorPechoReposo} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="problemasSalud">¿Tiene algún problema de salud que le cause dolor o limitación a tener en cuenta para abordar un programa de entrenamiento?</label>
-                    <input 
-                        type="text" 
-                        id="problemasSalud" 
-                        name="problemasSalud" 
-                        value={formData.problemasSalud} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="problemasSalud" className="form-label">¿Tiene algún problema de salud que le cause dolor o limitación a tener en cuenta para abordar un programa de entrenamiento?</label>
+                        <input 
+                            type="text" 
+                            id="problemasSalud" 
+                            name="problemasSalud" 
+                            value={formData.problemasSalud} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="embarazo">¿Está embarazada o ha dado a luz en los últimos 6 meses?</label>
-                    <input 
-                        type="text" 
-                        id="embarazo" 
-                        name="embarazo" 
-                        value={formData.embarazo} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="embarazo" className="form-label">¿Está embarazada o ha dado a luz en los últimos 6 meses?</label>
+                        <input 
+                            type="text" 
+                            id="embarazo" 
+                            name="embarazo" 
+                            value={formData.embarazo} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="cirugiaReciente">¿Se ha sometido a cirugía recientemente?</label>
-                    <input 
-                        type="text" 
-                        id="cirugiaReciente" 
-                        name="cirugiaReciente" 
-                        value={formData.cirugiaReciente} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="cirugiaReciente" className="form-label">¿Se ha sometido a cirugía recientemente?</label>
+                        <input 
+                            type="text" 
+                            id="cirugiaReciente" 
+                            name="cirugiaReciente" 
+                            value={formData.cirugiaReciente} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <div>
-                        <label>¿Es fumador?</label>
-                        <label>
+                    <div className="mb-3">
+                        <label className="form-label">¿Es fumador?</label>
+                        <div className="form-check">
                             <input 
                                 type="radio" 
                                 name="fumador" 
                                 value="si" 
                                 checked={formData.fumador === 'si'} 
                                 onChange={handleChange} 
+                                className="form-check-input"
                                 required 
                             />
-                            Sí
-                        </label>
-                        <label>
+                            <label className="form-check-label" htmlFor="fumador-si">
+                                Sí
+                            </label>
+                        </div>
+                        <div className="form-check">
                             <input 
                                 type="radio" 
                                 name="fumador" 
                                 value="no" 
                                 checked={formData.fumador === 'no'} 
                                 onChange={handleChange} 
+                                className="form-check-input"
                                 required 
                             />
-                            No
-                        </label>
+                            <label className="form-check-label" htmlFor="fumador-no">
+                                No
+                            </label>
+                        </div>
                     </div>
 
-                    <label htmlFor="horasSueno">¿Cuántas horas duerme de manera regular al día?</label>
-                    <input 
-                        type="number" 
-                        id="horasSueno" 
-                        name="horasSueno" 
-                        value={formData.horasSueno} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="horasSueno" className="form-label">¿Cuántas horas duerme de manera regular al día?</label>
+                        <input 
+                            type="number" 
+                            id="horasSueno" 
+                            name="horasSueno" 
+                            value={formData.horasSueno} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="trabajo">Su trabajo es:</label>
-                    <select 
-                        id="trabajo" 
-                        name="trabajo" 
-                        value={formData.trabajo} 
-                        onChange={handleChange} 
-                        required
-                    >
-                        <option value="">Seleccione una opción</option>
-                        <option value="sedentario">Sedentario</option>
-                        <option value="activo">Activo</option>
-                        <option value="fisicamenteExigente">Físicamente exigente</option>
-                    </select>
+                    <div className="mb-3">
+                        <label htmlFor="trabajo" className="form-label">Su trabajo es:</label>
+                        <input 
+                            type="text" 
+                            id="trabajo" 
+                            name="trabajo" 
+                            value={formData.trabajo} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <div>
-                        <label>¿Alguien de su familia tiene sobrepeso?</label>
-                        <label>
+                    <div className="mb-3">
+                        <label className="form-label">¿Alguien de su familia tiene sobrepeso?</label>
+                        <div className="form-check">
                             <input 
                                 type="radio" 
                                 name="familiaSobrepeso" 
                                 value="si" 
                                 checked={formData.familiaSobrepeso === 'si'} 
                                 onChange={handleChange} 
+                                className="form-check-input"
                                 required 
                             />
-                            Sí
-                        </label>
-                        <label>
+                            <label className="form-check-label" htmlFor="familiaSobrepeso-si">
+                                Sí
+                            </label>
+                        </div>
+                        <div className="form-check">
                             <input 
                                 type="radio" 
                                 name="familiaSobrepeso" 
                                 value="no" 
                                 checked={formData.familiaSobrepeso === 'no'} 
                                 onChange={handleChange} 
+                                className="form-check-input"
                                 required 
                             />
-                            No
-                        </label>
+                            <label className="form-check-label" htmlFor="familiaSobrepeso-no">
+                                No
+                            </label>
+                        </div>
                     </div>
 
-                    <label htmlFor="saludPrioridad">¿Cómo valora la salud en su vida?</label>
-                    <select 
-                        id="saludPrioridad" 
-                        name="saludPrioridad" 
-                        value={formData.saludPrioridad} 
-                        onChange={handleChange} 
-                        required
-                    >
-                        <option value="">Seleccione una opción</option>
-                        <option value="alta">Alta</option>
-                        <option value="media">Media</option>
-                        <option value="baja">Baja</option>
-                    </select>
+                    <div className="mb-3">
+                        <label htmlFor="saludPrioridad" className="form-label">¿Cómo valora la salud en su vida?</label>
+                        <input 
+                            type="text" 
+                            id="saludPrioridad" 
+                            name="saludPrioridad" 
+                            value={formData.saludPrioridad} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="tiempoEntrenamiento">¿Cuánto tiempo le gustaría entrenar al día?</label>
-                    <input 
-                        type="text" 
-                        id="tiempoEntrenamiento" 
-                        name="tiempoEntrenamiento" 
-                        value={formData.tiempoEntrenamiento} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="tiempoEntrenamiento" className="form-label">¿Cuánto tiempo le gustaría entrenar al día?</label>
+                        <input 
+                            type="text" 
+                            id="tiempoEntrenamiento" 
+                            name="tiempoEntrenamiento" 
+                            value={formData.tiempoEntrenamiento} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="compromiso">¿Cuál es su nivel de compromiso con el logro de su objetivo?</label>
-                    <input 
-                        type="text" 
-                        id="compromiso" 
-                        name="compromiso" 
-                        value={formData.compromiso} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="compromiso" className="form-label">¿Cuál es su nivel de compromiso con el logro de su objetivo?</label>
+                        <input 
+                            type="text" 
+                            id="compromiso" 
+                            name="compromiso" 
+                            value={formData.compromiso} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <label htmlFor="ayudaEntrenador">¿Qué piensa que es lo más importante que puede hacer por usted el entrenador personal para ayudarle a alcanzar sus metas?</label>
-                    <input 
-                        type="text" 
-                        id="ayudaEntrenador" 
-                        name="ayudaEntrenador" 
-                        value={formData.ayudaEntrenador} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="mb-3">
+                        <label htmlFor="ayudaEntrenador" className="form-label">¿Qué piensa que es lo más importante que puede hacer por usted el entrenador personal para ayudarle a alcanzar sus metas?</label>
+                        <input 
+                            type="text" 
+                            id="ayudaEntrenador" 
+                            name="ayudaEntrenador" 
+                            value={formData.ayudaEntrenador} 
+                            onChange={handleChange} 
+                            className="form-control"
+                            required 
+                        />
+                    </div>
 
-                    <button type="submit" className="submit-button">Enviar</button>
+                    <div className="d-flex justify-content-between mt-4">
+                        <button type="button" className="btn btn-secondary" onClick={() => window.location.href = '/'}>Cancelar</button>
+                        <button type="submit" className="btn btn-warning">Enviar a Whatsapp</button>
+                    </div>
                 </form>
             </div>
         </div>
