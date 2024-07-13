@@ -1,5 +1,5 @@
 /* src/components/main/Inicio.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -103,8 +103,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #000; /* Fondo negro */
-  color: #fff; /* Texto blanco */
+  background-color: #000; 
+  color: #ffff; /* Texto blanco */
 }
 
 .title-container {
@@ -131,6 +131,8 @@ body {
   flex: 1;
   padding-right: 20px;
   padding-left: 50px;
+  width: 100%;
+  max-width: 400px;
 }
 
 @media (min-width: 768px) {
@@ -145,13 +147,18 @@ body {
   line-height: 1.5; /* Reducir el espacio entre líneas */
   padding-left: 30px;
   padding-top: 20px;
-  font-size: 1.9rem;
-  margin-top: 15rem;
+  font-size: 1.2rem;
+  margin-top: 10rem;
+}
+
+.ultimo-parrafo{
+  margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
   .text-container {
       padding-top: 0;
+      font-size: 1.4rem;
   }
 }
 
@@ -160,20 +167,19 @@ body {
 }
 
 .highlighted-text {
-  color: yellow; /* Color amarillo */
+  color: #ffc605; /* Color amarillo */
 }
 
-
 /* src/components/main/Razones.jsx */
+
+
 .razones-container {
   background-color: #000;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
-  margin: 182px 36rem 64px 0px;
+  margin: 20px 10px; /* Ajuste de márgenes para pantallas pequeñas */
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .razones-title {
   color: #fff; /* Texto blanco */
@@ -189,35 +195,24 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
 }
+
 .razones-content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background: linear-gradient(#1a1a1a, #000);
   border: none;
   border-radius: 10px;
-  padding: 25px 10px; /* Cambiar padding para pantallas pequeñas */
-  margin: 20px; /* Cambiar margen para pantallas pequeñas */
-}
-
-@media (min-width: 576px) {
-  .razones-content {
-    padding: 25px 50px;
-    margin: 20px 50px;
-  }
-}
-
-@media (min-width: 768px) {
-  .razones-content {
-    padding: 25px 100px;
-    margin: 30px 100px;
-  }
+  padding: 25px 10px; /* Ajuste de padding para pantallas pequeñas */
+  margin: 20px; /* Ajuste de márgenes para pantallas pequeñas */
 }
 
 .razones-text {
   flex: 1;
-  margin-right: 20px;
+  margin-bottom: 20px; /* Margen inferior para pantallas pequeñas */
+  text-align: center; /* Centrando texto en pantallas pequeñas */
 }
 
 .razones-text ul {
@@ -239,32 +234,32 @@ body {
   margin-left: -1rem;
 }
 
-.razones-images {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@media (min-width: 576px) {
+  .razones-container {
+    margin: 182px 36rem 64px 0px; /* Ajuste de márgenes para pantallas medianas */
+  }
 
-.razones-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  .razones-content {
+    padding: 25px 50px;
+    margin: 20px 50px;
+  }
+
+  .razones-text {
+    text-align: left; /* Alinear texto a la izquierda para pantallas medianas */
+    margin-bottom: 0; /* Quitar margen inferior para pantallas medianas */
+  }
 }
 
 @media (min-width: 768px) {
   .razones-content {
+    padding: 25px 100px;
+    margin: 30px 100px;
     flex-direction: row;
   }
 
-  .razones-images {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .razones-image {
-    max-width: 300px;
-    margin-bottom: 0;
+  .razones-text {
+    margin-right: 20px;
+    text-align: left; /* Alinear texto a la izquierda para pantallas grandes */
   }
 }
 

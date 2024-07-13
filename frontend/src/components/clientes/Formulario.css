@@ -93,3 +93,24 @@ form div label {
     margin-right: 10px;
     font-weight: normal;
 }
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.radio-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 5px;
+}

@@ -2,8 +2,6 @@ import React from "react";
 import "./Estilos.css";
 
 const Razones = () => {
-    //const image1Url = "https://i.blogs.es/119852/1366_2000/1366_2000.jpeg";
-    //const image2Url = "https://i.blogs.es/119852/1366_2000/1366_2000.jpeg";
 
     return (
         <div className="razones-container">
@@ -20,12 +18,6 @@ const Razones = () => {
                 <li><strong>Asistencia diaria</strong></li>
                 </ul>
             </div>
-            </div>
-            <div className="razones-images">
-            {/* 
-                <img src={image1Url} alt="Entrenamiento 1" className="razones-image" />
-                <img src={image2Url} alt="Entrenamiento 2" className="razones-image" />
-            */}
             </div>
         </div>
         </div>
