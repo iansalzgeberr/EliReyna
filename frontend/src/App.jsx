@@ -3,6 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './components/main/Main';
 import Formulario from './components/clientes/Formulario';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   return (

@@ -170,17 +170,22 @@ body {
   color: #ffc605; /* Color amarillo */
 }
 
+
 /* src/components/main/Razones.jsx */
 
-
+/* Contenedor del componente Razones */
 .razones-container {
   background-color: #000;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
-  margin: 20px 10px; /* Ajuste de márgenes para pantallas pequeñas */
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar contenido horizontalmente */
 }
 
+/* Título del componente Razones */
 .razones-title {
   color: #fff; /* Texto blanco */
   font-size: 2rem;
@@ -190,41 +195,53 @@ body {
   font-weight: 900;
 }
 
+/* Resaltar texto en el título */
 .highlight {
   color: #ffc605; /* Color amarillo */
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
 }
 
+/* Contenido del componente Razones */
 .razones-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: center; /* Centrar contenido horizontalmente */
   background: linear-gradient(#1a1a1a, #000);
   border: none;
   border-radius: 10px;
-  padding: 25px 10px; /* Ajuste de padding para pantallas pequeñas */
-  margin: 20px; /* Ajuste de márgenes para pantallas pequeñas */
+  padding: 25px 10px;
+  margin: 20px;
 }
 
+/* Card del componente Razones */
+.razones-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar contenido horizontalmente */
+  width: 100%; /* Ajustar ancho al contenedor */
+  max-width: 600px; /* Máximo ancho para la card */
+}
+
+/* Texto dentro de la card */
 .razones-text {
-  flex: 1;
-  margin-bottom: 20px; /* Margen inferior para pantallas pequeñas */
-  text-align: center; /* Centrando texto en pantallas pequeñas */
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+/* Lista dentro de la card */
 .razones-text ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* Elementos de la lista dentro de la card */
 .razones-text li {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
 
+/* Añadir punto al inicio de cada elemento de la lista */
 .razones-text li:before {
   content: "•";
   color: #ffc605;
@@ -234,39 +251,123 @@ body {
   margin-left: -1rem;
 }
 
+/* Estilos para pantallas medianas */
 @media (min-width: 576px) {
   .razones-container {
-    margin: 182px 36rem 64px 0px; /* Ajuste de márgenes para pantallas medianas */
+      margin: 20px;
   }
 
   .razones-content {
-    padding: 25px 50px;
-    margin: 20px 50px;
+      padding: 25px 50px;
+      margin: 20px 50px;
   }
 
   .razones-text {
-    text-align: left; /* Alinear texto a la izquierda para pantallas medianas */
-    margin-bottom: 0; /* Quitar margen inferior para pantallas medianas */
+      text-align: left;
+      margin-bottom: 0;
   }
 }
 
+/* Estilos para pantallas grandes */
 @media (min-width: 768px) {
   .razones-content {
-    padding: 25px 100px;
-    margin: 30px 100px;
-    flex-direction: row;
+      padding: 25px 100px;
+      margin: 30px 100px;
+      flex-direction: row;
   }
 
   .razones-text {
-    margin-right: 20px;
-    text-align: left; /* Alinear texto a la izquierda para pantallas grandes */
+      margin-right: 20px;
+      text-align: left;
   }
 }
+
+/* src/components/Nutri.css */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+
+/* src/components/Estilos.css */
+.nutri-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.nutri-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.nutri-text h2 {
+  font-size: 2.0rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  color: #fff;
+  text-align: left; /* Centrando el título */
+}
+
+.highlight {
+  color: #ffc605; /* Color amarillo */
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.instagram, .phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+.instagram i, .phone i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.nutri-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nutri-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .nutri-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .nutri-image {
+      margin-top: 20px;
+  }
+}
+
+
+
 
 /* Importar fuente */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-/* Contenedor principal */
+/*Testimonio*/
 .testimonios-container {
   background-color: #000;
   color: #fff;

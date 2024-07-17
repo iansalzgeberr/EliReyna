@@ -7,6 +7,7 @@ import NavBar from '../NavBar';
 import Footer from '../Footer';
 import Inicio from './Inicio';
 import Contacto from './Contacto';
+import Nutri from './Nutri';
 
 
 const Main = () => {
@@ -24,6 +25,9 @@ const Main = () => {
       </section>
       <section id="razones">
         <Razones />
+      </section>
+      <section id="nutri">
+        <Nutri />
       </section>
       <section id="testimonios">
         <Testimonios />
