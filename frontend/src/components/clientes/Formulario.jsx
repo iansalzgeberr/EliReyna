@@ -33,22 +33,22 @@ const Formulario = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const whatsappUrl = `https://wa.me/+5493517569078?text=${
-            'Nombre y apellido: ' + encodeURIComponent(formData.nombre) + '\n' +
-            'Edad: ' + encodeURIComponent(formData.edad) + '\n' +
-            '¿Alguna vez ha sido diagnosticado con una enfermedad cardíaca o le han recomendado que solamente realice actividad física bajo supervisión médica?: ' + encodeURIComponent(formData.enfermedadCardiaca) + '\n' +
-            '¿Suele padecer dolores de pecho cuando realiza actividad física?: ' + encodeURIComponent(formData.dolorPechoActividadFisica) + '\n' +
-            '¿Ha tenido dolor en el pecho cuando no estaba realizando actividad física?: ' + encodeURIComponent(formData.dolorPechoReposo) + '\n' +
-            '¿Tiene algún problema de salud que le cause dolor o limitación a tener en cuenta para abordar un programa de entrenamiento?: ' + encodeURIComponent(formData.problemasSalud) + '\n' +
-            '¿Está embarazada o ha dado a luz en los últimos 6 meses?: ' + encodeURIComponent(formData.embarazo) + '\n' +
-            '¿Se ha sometido a cirugía recientemente?: ' + encodeURIComponent(formData.cirugiaReciente) + '\n' +
-            '¿Es fumador?: ' + (formData.fumador ? 'Sí' : 'No') + '\n' +
-            '¿Cuántas horas duerme de manera regular al día?: ' + encodeURIComponent(formData.horasSueno) + '\n' +
-            'Su trabajo es: ' + encodeURIComponent(formData.trabajo) + '\n' +
-            '¿Alguien de su familia tiene sobrepeso?: ' + (formData.familiaSobrepeso ? 'Sí' : 'No') + '\n' +
-            '¿Cómo valora la salud en su vida?: ' + encodeURIComponent(formData.saludPrioridad) + '\n' +
-            '¿Cuánto tiempo le gustaría entrenar al día?: ' + encodeURIComponent(formData.tiempoEntrenamiento) + '\n' +
-            '¿Cuál es su nivel de compromiso con el logro de su objetivo?: ' + encodeURIComponent(formData.compromiso) + '\n' +
-            '¿Qué piensa que es lo más importante que puede hacer por usted el entrenador personal para ayudarle a alcanzar sus metas?: ' + encodeURIComponent(formData.ayudaEntrenador)
+            encodeURIComponent('Nombre y apellido: ' + formData.nombre + '\n\n') +
+            encodeURIComponent('Edad: ' + formData.edad + '\n\n') +
+            encodeURIComponent('¿Alguna vez ha sido diagnosticado con una enfermedad cardíaca o le han recomendado que solamente realice actividad física bajo supervisión médica?: ' + formData.enfermedadCardiaca + '\n\n') +
+            encodeURIComponent('¿Suele padecer dolores de pecho cuando realiza actividad física?: ' + formData.dolorPechoActividadFisica + '\n\n') +
+            encodeURIComponent('¿Ha tenido dolor en el pecho cuando no estaba realizando actividad física?: ' + formData.dolorPechoReposo + '\n\n') +
+            encodeURIComponent('¿Tiene algún problema de salud que le cause dolor o limitación a tener en cuenta para abordar un programa de entrenamiento?: ' + formData.problemasSalud + '\n\n') +
+            encodeURIComponent('¿Está embarazada o ha dado a luz en los últimos 6 meses?: ' + formData.embarazo + '\n\n') +
+            encodeURIComponent('¿Se ha sometido a cirugía recientemente?: ' + formData.cirugiaReciente + '\n\n') +
+            encodeURIComponent('¿Es fumador?: ' + (formData.fumador === 'si' ? 'Sí' : 'No') + '\n\n') +
+            encodeURIComponent('¿Cuántas horas duerme de manera regular al día?: ' + formData.horasSueno + '\n\n') +
+            encodeURIComponent('Su trabajo es: ' + formData.trabajo + '\n\n') +
+            encodeURIComponent('¿Alguien de su familia tiene sobrepeso?: ' + (formData.familiaSobrepeso === 'si' ? 'Sí' : 'No') + '\n\n') +
+            encodeURIComponent('¿Cómo valora la salud en su vida?: ' + formData.saludPrioridad + '\n\n') +
+            encodeURIComponent('¿Cuánto tiempo le gustaría entrenar al día?: ' + formData.tiempoEntrenamiento + '\n\n') +
+            encodeURIComponent('¿Cuál es su nivel de compromiso con el logro de su objetivo?: ' + formData.compromiso + '\n\n') +
+            encodeURIComponent('¿Qué piensa que es lo más importante que puede hacer por usted el entrenador personal para ayudarle a alcanzar sus metas?: ' + formData.ayudaEntrenador)
         }`;
         window.open(whatsappUrl, '_blank');
     };
@@ -84,6 +84,9 @@ const Formulario = () => {
                             value={formData.edad} 
                             onChange={handleChange} 
                             className="form-control"
+                            min="10" 
+                            max="95"    
+                            step="1"  
                             required 
                         />
                     </div>
@@ -200,31 +203,25 @@ const Formulario = () => {
                             value={formData.horasSueno} 
                             onChange={handleChange} 
                             className="form-control"
-                            min="2"
-                            max="18"
-                            step="1"
+                            min="0" 
+                            max="24"  
+                            step="1"  
                             required 
                         />
                     </div>
 
-
                     <div className="mb-3">
                         <label htmlFor="trabajo" className="form-label">Su trabajo es:</label>
-                        <select
-                            id="trabajo"
-                            name="trabajo"
-                            value={formData.trabajo}
-                            onChange={handleChange}
+                        <input 
+                            type="text" 
+                            id="trabajo" 
+                            name="trabajo" 
+                            value={formData.trabajo} 
+                            onChange={handleChange} 
                             className="form-control"
-                            required
-                        >
-                            <option value="">Seleccione una opción</option>
-                            <option value="sedentario">Sedentario</option>
-                            <option value="activo">Activo</option>
-                            <option value="fisicamenteExigente">Físicamente exigente</option>
-                        </select>
+                            required 
+                        />
                     </div>
-
 
                     <div className="mb-3">
                         <label htmlFor="familiaSobrepeso" className="form-label">¿Alguien de su familia tiene sobrepeso?</label>
@@ -244,60 +241,42 @@ const Formulario = () => {
 
                     <div className="mb-3">
                         <label htmlFor="saludPrioridad" className="form-label">¿Cómo valora la salud en su vida?</label>
-                        <select
-                            id="saludPrioridad"
-                            name="saludPrioridad"
-                            value={formData.saludPrioridad}
-                            onChange={handleChange}
+                        <input 
+                            type="text" 
+                            id="saludPrioridad" 
+                            name="saludPrioridad" 
+                            value={formData.saludPrioridad} 
+                            onChange={handleChange} 
                             className="form-control"
-                            required
-                        >
-                            <option value="">Seleccione una opción</option>
-                            <option value="muy_baja">Muy poco</option>
-                            <option value="baja">poco</option>
-                            <option value="media">Moderada</option>
-                            <option value="alta">Alta</option>
-                            <option value="muy_alta">Muy alta</option>
-                        </select>
+                            required 
+                        />
                     </div>
 
-
                     <div className="mb-3">
-                        <label htmlFor="tiempoEntrenamiento" className="form-label">¿Cuánto tiempo le gustaría entrenar al día? (en horas)</label>
+                        <label htmlFor="tiempoEntrenamiento" className="form-label">¿Cuánto tiempo le gustaría entrenar al día?</label>
                         <input 
-                            type="number" 
+                            type="text" 
                             id="tiempoEntrenamiento" 
                             name="tiempoEntrenamiento" 
                             value={formData.tiempoEntrenamiento} 
                             onChange={handleChange} 
                             className="form-control"
-                            min="0.5"   // Puedes ajustar estos valores según sea necesario
-                            max="6"    // Tiempo máximo de entrenamiento en horas
-                            step="0.5"  // Incremento en horas
                             required 
                         />
                     </div>
 
-
                     <div className="mb-3">
                         <label htmlFor="compromiso" className="form-label">¿Cuál es su nivel de compromiso con el logro de su objetivo?</label>
-                        <select
-                            id="compromiso"
-                            name="compromiso"
-                            value={formData.compromiso}
-                            onChange={handleChange}
+                        <input 
+                            type="text" 
+                            id="compromiso" 
+                            name="compromiso" 
+                            value={formData.compromiso} 
+                            onChange={handleChange} 
                             className="form-control"
-                            required
-                        >
-                            <option value="">Seleccione una opción</option>
-                            <option value="muy_bajo">Muy bajo</option>
-                            <option value="bajo">Bajo</option>
-                            <option value="moderado">Moderado</option>
-                            <option value="alto">Alto</option>
-                            <option value="muy_alto">Muy alto</option>
-                        </select>
+                            required 
+                        />
                     </div>
-
 
                     <div className="mb-3">
                         <label htmlFor="ayudaEntrenador" className="form-label">¿Qué piensa que es lo más importante que puede hacer por usted el entrenador personal para ayudarle a alcanzar sus metas?</label>
@@ -312,9 +291,8 @@ const Formulario = () => {
                         />
                     </div>
 
-                    <div className="d-flex justify-content-between mt-4">
-                        <button type="button" className="btn btn-secondary" onClick={() => window.location.href = '/'}>Cancelar</button>
-                        <button type="submit" className="btn btn-warning">Enviar a Whatsapp</button>
+                    <div className="text-center">
+                        <button type="submit" className="btn btn-primary">Enviar por WhatsApp</button>
                     </div>
                 </form>
             </div>
