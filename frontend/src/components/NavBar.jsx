@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importar Bootstrap JS
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <a className="navbar-brand" href="#" style={{ paddingLeft: '20px' }}>
         <img alt="Logo" src={logo} width="100" height="60" className="d-inline-block align-top" />
       </a>

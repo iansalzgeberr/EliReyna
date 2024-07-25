@@ -35,3 +35,18 @@
     background-color: #FFC605;
     border-color: #FFC605;
 }
+
+#formulario {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .form-check-label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .form-check-input {
+        margin-right: 10px;
+    }
+    
