@@ -64,43 +64,43 @@ const Formulario = () => {
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <label htmlFor="nombre" className="form-label">Nombre y apellido:</label>
-                        <input 
-                            type="text" 
-                            id="nombre" 
-                            name="nombre" 
-                            value={formData.nombre} 
-                            onChange={handleChange} 
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            value={formData.nombre}
+                            onChange={handleChange}
                             className="form-control"
-                            required 
+                            required
                         />
                     </div>
 
                     <div className="mb-3">
                         <label htmlFor="edad" className="form-label">Edad:</label>
-                        <input 
-                            type="number" 
-                            id="edad" 
-                            name="edad" 
-                            value={formData.edad} 
-                            onChange={handleChange} 
+                        <input
+                            type="number"
+                            id="edad"
+                            name="edad"
+                            value={formData.edad}
+                            onChange={handleChange}
                             className="form-control"
-                            min="10" 
-                            max="95"    
-                            step="1"  
-                            required 
+                            min="12"
+                            max="95"
+                            step="1"
+                            required
                         />
                     </div>
 
                     <div className="mb-3">
                         <label htmlFor="enfermedadCardiaca" className="form-label">¿Alguna vez ha sido diagnosticado con una enfermedad cardíaca o le han recomendado que solamente realice actividad física bajo supervisión médica?</label>
-                        <input 
-                            type="text" 
-                            id="enfermedadCardiaca" 
-                            name="enfermedadCardiaca" 
-                            value={formData.enfermedadCardiaca} 
-                            onChange={handleChange} 
+                        <input
+                            type="text"
+                            id="enfermedadCardiaca"
+                            name="enfermedadCardiaca"
+                            value={formData.enfermedadCardiaca}
+                            onChange={handleChange}
                             className="form-control"
-                            required 
+                            required
                         />
                     </div>
 
@@ -138,14 +138,14 @@ const Formulario = () => {
 
                     <div className="mb-3">
                         <label htmlFor="problemasSalud" className="form-label">¿Tiene algún problema de salud que le cause dolor o limitación a tener en cuenta para abordar un programa de entrenamiento?</label>
-                        <input 
-                            type="text" 
-                            id="problemasSalud" 
-                            name="problemasSalud" 
-                            value={formData.problemasSalud} 
-                            onChange={handleChange} 
+                        <input
+                            type="text"
+                            id="problemasSalud"
+                            name="problemasSalud"
+                            value={formData.problemasSalud}
+                            onChange={handleChange}
                             className="form-control"
-                            required 
+                            required
                         />
                     </div>
 
@@ -167,14 +167,14 @@ const Formulario = () => {
 
                     <div className="mb-3">
                         <label htmlFor="cirugiaReciente" className="form-label">¿Se ha sometido a cirugía recientemente?¿Cual?</label>
-                        <input 
-                            type="text" 
-                            id="cirugiaReciente" 
-                            name="cirugiaReciente" 
-                            value={formData.cirugiaReciente} 
-                            onChange={handleChange} 
+                        <input
+                            type="text"
+                            id="cirugiaReciente"
+                            name="cirugiaReciente"
+                            value={formData.cirugiaReciente}
+                            onChange={handleChange}
                             className="form-control"
-                            required 
+                            required
                         />
                     </div>
 
@@ -196,32 +196,38 @@ const Formulario = () => {
 
                     <div className="mb-3">
                         <label htmlFor="horasSueno" className="form-label">¿Cuántas horas duerme de manera regular al día?</label>
-                        <input 
-                            type="number" 
-                            id="horasSueno" 
-                            name="horasSueno" 
-                            value={formData.horasSueno} 
-                            onChange={handleChange} 
+                        <input
+                            type="number"
+                            id="horasSueno"
+                            name="horasSueno"
+                            value={formData.horasSueno}
+                            onChange={handleChange}
                             className="form-control"
-                            min="0" 
-                            max="24"  
-                            step="1"  
-                            required 
+                            min="4"
+                            max="18"
+                            step="1"
+                            required
                         />
                     </div>
 
+
                     <div className="mb-3">
                         <label htmlFor="trabajo" className="form-label">Su trabajo es:</label>
-                        <input 
-                            type="text" 
-                            id="trabajo" 
-                            name="trabajo" 
-                            value={formData.trabajo} 
-                            onChange={handleChange} 
+                        <select
+                            id="trabajo"
+                            name="trabajo"
+                            value={formData.trabajo}
+                            onChange={handleChange}
                             className="form-control"
-                            required 
-                        />
+                            required
+                        >
+                            <option value="">Seleccione una opción</option>
+                            <option value="sedentario">Sedentario</option>
+                            <option value="activo">Activo</option>
+                            <option value="fisicamenteExigente">Físicamente exigente</option>
+                        </select>
                     </div>
+
 
                     <div className="mb-3">
                         <label htmlFor="familiaSobrepeso" className="form-label">¿Alguien de su familia tiene sobrepeso?</label>
@@ -241,58 +247,76 @@ const Formulario = () => {
 
                     <div className="mb-3">
                         <label htmlFor="saludPrioridad" className="form-label">¿Cómo valora la salud en su vida?</label>
-                        <input 
-                            type="text" 
-                            id="saludPrioridad" 
-                            name="saludPrioridad" 
-                            value={formData.saludPrioridad} 
-                            onChange={handleChange} 
+                        <select
+                            id="saludPrioridad"
+                            name="saludPrioridad"
+                            value={formData.saludPrioridad}
+                            onChange={handleChange}
                             className="form-control"
-                            required 
+                            required
+                        >
+                            <option value="">Seleccione una opción</option>
+                            <option value="muy_baja">Muy poco</option>
+                            <option value="baja">poco</option>
+                            <option value="media">Moderada</option>
+                            <option value="alta">bastante</option>
+                            <option value="muy_alta">mucho</option>
+                        </select>
+                    </div>
+
+
+                    <div className="mb-3">
+                        <label htmlFor="tiempoEntrenamiento" className="form-label">¿Cuánto tiempo le gustaría entrenar al día? (en horas)</label>                        <input
+                            type="number"
+                            id="tiempoEntrenamiento"
+                            name="tiempoEntrenamiento"
+                            value={formData.tiempoEntrenamiento}
+                            onChange={handleChange}
+                            className="form-control"
+                            min="0.5"   // Puedes ajustar estos valores según sea necesario
+                            max="6"    // Tiempo máximo de entrenamiento en horas
+                            step="0.5"  // Incremento en horas
+                            required
                         />
                     </div>
 
-                    <div className="mb-3">
-                        <label htmlFor="tiempoEntrenamiento" className="form-label">¿Cuánto tiempo le gustaría entrenar al día?</label>
-                        <input 
-                            type="text" 
-                            id="tiempoEntrenamiento" 
-                            name="tiempoEntrenamiento" 
-                            value={formData.tiempoEntrenamiento} 
-                            onChange={handleChange} 
-                            className="form-control"
-                            required 
-                        />
-                    </div>
 
                     <div className="mb-3">
-                        <label htmlFor="compromiso" className="form-label">¿Cuál es su nivel de compromiso con el logro de su objetivo?</label>
-                        <input 
-                            type="text" 
-                            id="compromiso" 
-                            name="compromiso" 
-                            value={formData.compromiso} 
-                            onChange={handleChange} 
+                        <label htmlFor="compromiso" className="form-label">¿Cuál es su nivel de compromiso con el logro de su objetivo?</label>   
+                        <select
+                            id="compromiso"
+                            name="compromiso"
+                            value={formData.compromiso}
+                            onChange={handleChange}
                             className="form-control"
-                            required 
-                        />
+                            required
+                        >
+                            <option value="">Seleccione una opción</option>
+                            <option value="muy_bajo">Muy bajo</option>
+                            <option value="bajo">Bajo</option>
+                            <option value="moderado">Moderado</option>
+                            <option value="alto">Alto</option>
+                            <option value="muy_alto">Muy alto</option>
+                        </select>
                     </div>
+
 
                     <div className="mb-3">
                         <label htmlFor="ayudaEntrenador" className="form-label">¿Qué piensa que es lo más importante que puede hacer por usted el entrenador personal para ayudarle a alcanzar sus metas?</label>
-                        <input 
-                            type="text" 
-                            id="ayudaEntrenador" 
-                            name="ayudaEntrenador" 
-                            value={formData.ayudaEntrenador} 
-                            onChange={handleChange} 
+                        <input
+                            type="text"
+                            id="ayudaEntrenador"
+                            name="ayudaEntrenador"
+                            value={formData.ayudaEntrenador}
+                            onChange={handleChange}
                             className="form-control"
-                            required 
+                            required
                         />
                     </div>
 
-                    <div className="text-center">
-                        <button type="submit" className="btn btn-primary">Enviar por WhatsApp</button>
+                    <div className="d-flex justify-content-between mt-4">
+                        <button type="button" className="btn btn-secondary" onClick={() => window.location.href = '/'}>Cancelar</button>
+                        <button type="submit" className="btn btn-warning">Enviar a Whatsapp</button>
                     </div>
                 </form>
             </div>
