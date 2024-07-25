@@ -1,5 +1,10 @@
 /* src/components/main/Inicio.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -12,77 +17,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .content {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
-    padding: 50px;
-    border-radius: 10px;
-  }
-  
-  .title {
-    color: #fff; /* Texto blanco */
-    font-size: 3rem;
-  }
-  
-  .subtitle {
-    color: #ccc; /* Texto blanco */
-    font-size: 1.5rem;
-  }
-  
-  .btn-warning {
-    background-color: #ffc605;
-    border-color: #ffc605;
-  }
-  
-  .btn-outline-warning {
-    color: #ffc605;
-    border-color: #ffc605;
-  }
-  
-  .btn-warning:hover, .btn-outline-warning:hover {
-    background-color: #e5b600;
-    border-color: #e5b600;
-  }
-  
-/* src/components/main/Planes.css */
-.planes-container {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
 }
+/* src/components/main/Estilos.css */
 
-.highlight {
-  color: #ffc605;
-}
-
-.plan-card {
-  background: linear-gradient(#393939, #000);
-  border: none;
-  border-radius: 10px;
-}
-
-.plan-card .card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.plan-card .card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.plan-card .card-subtitle {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #ffc605;
-}
-
-.plan-card .card-text {
-  font-size: 0.9rem;
-  margin-bottom: 15px;
+.btn-warning {
+  background-color: #ffc605;
+  border-color: #ffc605;
 }
 
 .btn-outline-warning {
@@ -90,9 +30,145 @@ body {
   border-color: #ffc605;
 }
 
+.btn-warning:hover, .btn-outline-warning:hover {
+  background-color: #e5b600;
+  border-color: #e5b600;
+}
+
+/* Añadir margen a los botones */
+.btn-spacing {
+  margin: 0 10px; /* Ajusta el valor según el espacio deseado */
+}
+
+/* src/components/main/Estilos.css */
+
+.button-container {
+  display: flex;
+  gap: 15px; /* Ajusta el valor según el espacio deseado */
+  justify-content: center;
+}
+
+
+.content {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.title {
+    color: #fff; /* Texto blanco */
+    font-size: 3rem;
+}
+
+.subtitle {
+    color: #ccc; /* Texto blanco */
+    font-size: 1.5rem;
+}
+
+.btn-warning {
+    background-color: #ffc605;
+    border-color: #ffc605;
+}
+
+.btn-outline-warning {
+    color: #ffc605;
+    border-color: #ffc605;
+}
+
+.btn-warning:hover, .btn-outline-warning:hover {
+    background-color: #e5b600;
+    border-color: #e5b600;
+}
+
+/* src/components/main/Planes.css */
+.planes-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.planes-title {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #ffc605;
+}
+
+.planes-row {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que las cards se envuelvan a la siguiente línea */
+  gap: 10px; /* Espacio entre las cards */
+  justify-content: center; /* Centrar las cards horizontalmente */
+}
+
+.plan-card {
+  background: #070707; /* Fondo de la card */
+  border: 1px solid #fff; /* Borde blanco */
+  border-radius: 10px;
+  text-align: center; /* Alinear el texto al centro */
+  flex: 1 1 calc(33.33% - 50px); /* Tres cards por fila con espacio */
+  max-width: calc(33.33% - 20px); /* Ajustar el ancho máximo */
+  margin: 10px; /* Añadir margen para separación */
+}
+
+.plan-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinear contenido al centro */
+  padding: 20px;
+}
+
+.plan-card .card-title {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff; /* Color del título en blanco */
+}
+
+.plan-card .card-subtitle {
+  font-size: 2rem; /* Tamaño de fuente mayor para el precio */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff; /* Color del precio en blanco */
+}
+
+.plan-card .card-text {
+  font-size: 1rem;
+  color: #888888; /* Color de la descripción en gris */
+  margin-bottom: 15px;
+}
+
+.btn-outline-warning {
+  color: #ffc605; /* Texto del botón en color amarillo */
+  border-color: #ffc605; /* Borde del botón en color amarillo */
+  background-color: #000; /* Fondo del botón en negro */
+}
+
 .btn-outline-warning:hover {
-  background-color: #ffc605;
-  color: #000;
+  background-color: #ffc605; /* Fondo del botón en amarillo al pasar el mouse */
+  color: #000; /* Texto del botón en negro al pasar el mouse */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+  .plan-card {
+      flex: 1 1 calc(33.33% - 20px); /* Dos cards por fila con espacio */
+      max-width: calc(33.33% - 20px); /* Ajustar el ancho máximo */
+  }
+}
+
+@media (max-width: 768px) {
+  .plan-card {
+      flex: 1 1 calc(100% - 20px); /* Una card por fila con espacio */
+      max-width: calc(100% - 20px); /* Ajustar el ancho máximo */
+  }
 }
 
 
@@ -111,7 +187,10 @@ body {
   align-self: flex-start;
   margin-bottom: 15px;
   padding-left: 35px;
-  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
 }
 
 .content-container {
@@ -182,17 +261,16 @@ body {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrar contenido horizontalmente */
+  align-items: flex-start; /* Alinear contenido a la izquierda */
 }
 
 /* Título del componente Razones */
 .razones-title {
   color: #fff; /* Texto blanco */
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.9rem;
+  text-align: left; /* Alinear texto a la izquierda */
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 900;
 }
 
 /* Resaltar texto en el título */
@@ -206,7 +284,7 @@ body {
 .razones-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrar contenido horizontalmente */
+  align-items: flex-start; /* Alinear contenido a la izquierda */
   background: linear-gradient(#1a1a1a, #000);
   border: none;
   border-radius: 10px;
@@ -218,7 +296,7 @@ body {
 .razones-card {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrar contenido horizontalmente */
+  align-items: flex-start; /* Alinear contenido a la izquierda */
   width: 100%; /* Ajustar ancho al contenedor */
   max-width: 600px; /* Máximo ancho para la card */
 }
@@ -226,7 +304,7 @@ body {
 /* Texto dentro de la card */
 .razones-text {
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left; /* Alinear texto a la izquierda */
 }
 
 /* Lista dentro de la card */
@@ -283,7 +361,7 @@ body {
 }
 
 /* src/components/Nutri.css */
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
 
 
 /* src/components/Estilos.css */
@@ -291,26 +369,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 30px;
   background-color: #000;
   color: #fff;
   border-radius: 10px;
   margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra para mayor profundidad */
 }
 
 .nutri-text {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
+  padding-right: 20px; /* Espacio entre el texto y la imagen */
 }
 
 .nutri-text h2 {
-  font-size: 2.0rem;
+  font-size: 1.9rem; /* Aumentar el tamaño del texto */
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   color: #fff;
-  text-align: left; /* Centrando el título */
+  text-align: left;
+  margin-bottom: 20px; /* Espacio debajo del título */
 }
 
 .highlight {
@@ -320,20 +401,22 @@ body {
 .social-media {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  margin-top: 10px;
 }
 
 .instagram, .phone {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  font-size: 23px;
+  margin-bottom: 15px; /* Espacio entre los elementos */
+  font-size: 1.2rem; /* Ajustar el tamaño del texto */
 }
 
 .instagram i, .phone i {
   font-size: 1.5rem;
   margin-right: 10px;
+}
+
+.social-media span {
+  font-weight: bold;
 }
 
 .nutri-image {
@@ -344,28 +427,29 @@ body {
 
 .nutri-image img {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px; /* Ajustar el tamaño máximo de la imagen */
   height: auto;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra a la imagen */
 }
 
 @media (max-width: 768px) {
   .nutri-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Reducir el padding en pantallas más pequeñas */
+  }
+
+  .nutri-text {
+    padding-right: 0; /* Quitar el espacio derecho en pantallas más pequeñas */
   }
 
   .nutri-image {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 }
 
-
-
-
-/* Importar fuente */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 /*Testimonio*/
 .testimonios-container {

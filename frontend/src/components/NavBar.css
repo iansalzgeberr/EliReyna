@@ -1,0 +1,28 @@
+.nav-link.nav-underline {
+  position: relative;
+}
+
+.nav-link.nav-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFC605;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link.nav-underline:hover::after,
+.nav-link.nav-underline:focus::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.nav-link {
+  display: block; /* Asegura que el enlace ocupe todo el ancho del elemento li */
+  text-align: center; /* Alinea el texto dentro del enlace */
+  padding-right: 20px; /* Opcional: espacio adicional a la derecha */
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../images/logo.png'; // Asegúrate de poner la ruta correcta a tu logo
-import './Estilos.css'; // Importa el archivo CSS
+import './NavBar.css'; // Importa el archivo CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importar Bootstrap CSS
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importar Bootstrap JS
 
 const NavBar = () => {
   return (

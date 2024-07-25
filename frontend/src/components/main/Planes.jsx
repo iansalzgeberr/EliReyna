@@ -1,7 +1,7 @@
-// src/components/main/Planes.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Popup from './Popup';
+import './Estilos.css'; // Importa el archivo de estilos
 
 const Planes = () => {
   const [selectedPlan, setSelectedPlan] = useState(null);
@@ -79,20 +79,16 @@ const Planes = () => {
   };
 
   return (
-    <div className="container text-left my-5" style={{ backgroundColor: '#000000', color: '#FFFFFF' }}>
-      <h2 className="mb-4">Suscribite a nuestros <span style={{ color: '#FFC605' }}>Planes</span></h2>
-      <div className="row">
+    <div className="planes-container">
+      <h2 className="planes-title">Suscribite a nuestros <span className="highlight">Planes</span></h2>
+      <div className="planes-row">
         {plans.map((plan, index) => (
-          <div key={index} className="col-md-4 mb-4">
-            <div className="card text-white h-100" style={{ background: 'none', border: 'none' }}>
-              <div className="card-body d-flex flex-column justify-content-between" style={{ background: 'linear-gradient(90deg, #1c1c1c, #000000)', borderRadius: '10px' }}>
-                <div className="text-left">
-                  <h5 className="card-title mb-3" style={{ fontWeight: 'bold' }}>{plan.title}</h5>
-                  <h6 className="card-subtitle mb-3" style={{ fontSize: '1.5em', fontWeight: 'bold' }}>${plan.price}</h6>
-                  <p className="card-text" style={{ color: '#888888' }}>{plan.description}</p>
-                </div>
-                <button className="btn btn-outline-warning mt-3" style={{ color: '#FFFFFF', borderColor: '#FFC605' }} onClick={() => handleSelectPlan(plan)}>Select Plan</button>
-              </div>
+          <div key={index} className="plan-card">
+            <div className="card-body">
+              <h5 className="card-title">{plan.title}</h5>
+              <h6 className="card-subtitle">${plan.price}</h6>
+              <p className="card-text">{plan.description}</p>
+              <button className="btn btn-outline-warning" onClick={() => handleSelectPlan(plan)}>Select Plan</button>
             </div>
           </div>
         ))}
@@ -103,7 +99,7 @@ const Planes = () => {
           content={selectedPlan.content}
           imageSrc={selectedPlan.imageSrc}
           onClose={handleClosePopup}
-          onAcquirePlan={handleAcquirePlan} // Añadir esta prop para manejar la redirección
+          onAcquirePlan={handleAcquirePlan}
         />
       )}
     </div>
