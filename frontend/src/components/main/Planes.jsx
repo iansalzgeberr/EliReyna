@@ -13,42 +13,42 @@ const Planes = () => {
       price: '20.000',
       description: 'Superá tus límites',
       content: 'Desarrollo y aplicacion de un programa de entrenamiento para mejorar y aumentar tu masa muscular. Viendo los progresdos dia a dia y ayudandote a tener mejores ganancias musculares.',
-      imageSrc: '../../../images/razones1.jpg' // Reemplaza con la ruta correcta a tu imagen
+      imageSrc: '../../../images/Eli2.jpg' // Reemplaza con la ruta correcta a tu imagen
     },
     {
       title: 'Descenso de peso',
       price: '20.000',
       description: 'Superá tus límites',
       content: 'Programa Descenso de Peso especialmente enfocado para que logres el maximo resultado posible de forma armonica y sostenible, sustentado por una larga trayectoria de exito en programas eficaces.',
-      imageSrc: '../../../images/razones2.jpeg'
+      imageSrc: '../../../images/Eli3.jpg'
     },
     {
       title: 'Entrenamiento En Casa',
       price: '20.000',
       description: 'Superá tus límites',
       content: 'Plan de Entrenamiento planificado para que entrenes como en tu casa. En base a tus objetivos planificamos tu rutina diaria acorde a tu espacio y elementos.',
-      imageSrc: '/path/to/image3.jpg'
+      imageSrc: '../../../images/Eli4.jpg'
     },
     {
       title: 'Adulto mayores',
       price: '20.000',
       description: 'Superá tus límites',
       content: 'Ejercicios para realizar desde casa, con elementos del hogar, que nos ayudaran a mantener la elasticidad y la salud de nuestros musculos.',
-      imageSrc: '/path/to/image5.jpg'
+      imageSrc: '../../../images/Eli5.jpg'
     },
     {
       title: 'Plan adaptado a deportistas',
       price: '20.000',
       description: 'Superá tus límites',
       content: 'Haces Algun deporte en especifico? Planifico la rutina para mejorar tu rendimiento y llevarlo a un mejor nivel. Evaluaciones antes y durante la planificacion.',
-      imageSrc: '/path/to/image6.jpg'
+      imageSrc: '../../../images/Eli6.jpg'
     },
     {
       title: 'R.P.G (reeducación postural global) + aumento de masa muscular',
       price: '20.000',
       description: 'Superá tus límites',
       content: 'Programa de entrenamiento basado en la posibilidad de adecuar el entrenamiento a cada persona y a su problematica especifica, RPG puede ser aplicada en un gran numero de casos siendo una herramienta eficaz en el tratamiento y corrección de alteraciones postulares, rigidez corporal y situaciones dolor. Agregando a este programa una planificacion de aumento de masa muscular completamente especifico para vos.',
-      imageSrc: '/path/to/image7.jpg'
+      imageSrc: '../../../images/Eli7.jpg'
     }
   ];
 
