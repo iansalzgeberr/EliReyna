@@ -12,58 +12,44 @@ const Planes = () => {
       title: 'Aumento masa muscular',
       price: '20.000',
       description: 'Superá tus límites',
-      content: 'Nuestro plan de aumento de masa muscular te ayudará a ganar fuerza y tamaño muscular con rutinas de entrenamiento intensas y una nutrición adecuada.',
+      content: 'Desarrollo y aplicacion de un programa de entrenamiento para mejorar y aumentar tu masa muscular. Viendo los progresdos dia a dia y ayudandote a tener mejores ganancias musculares.',
       imageSrc: '../../../images/razones1.jpg' // Reemplaza con la ruta correcta a tu imagen
     },
     {
       title: 'Descenso de peso',
       price: '20.000',
       description: 'Superá tus límites',
-      content: 'Este plan está diseñado para ayudarte a perder peso de manera saludable mediante una combinación de ejercicios cardiovasculares y una dieta balanceada.',
+      content: 'Programa Descenso de Peso especialmente enfocado para que logres el maximo resultado posible de forma armonica y sostenible, sustentado por una larga trayectoria de exito en programas eficaces.',
       imageSrc: '../../../images/razones2.jpeg'
     },
     {
-      title: 'Tonificación',
+      title: 'Entrenamiento En Casa',
       price: '20.000',
       description: 'Superá tus límites',
-      content: 'Nuestro plan de tonificación se centra en definir y fortalecer tus músculos, dándote una apariencia más esculpida y tonificada.',
+      content: 'Plan de Entrenamiento planificado para que entrenes como en tu casa. En base a tus objetivos planificamos tu rutina diaria acorde a tu espacio y elementos.',
       imageSrc: '/path/to/image3.jpg'
-    },
-    {
-      title: 'Entrenamiento en casa',
-      price: '20.000',
-      description: 'Superá tus límites',
-      content: 'Este plan te permite entrenar desde la comodidad de tu hogar con rutinas efectivas que no requieren equipo especializado.',
-      imageSrc: '/path/to/image4.jpg'
     },
     {
       title: 'Adulto mayores',
       price: '20.000',
       description: 'Superá tus límites',
-      content: 'Nuestro plan para adultos mayores está diseñado para mejorar la movilidad, la fuerza y la salud en general, adaptado a las necesidades específicas de esta etapa de la vida.',
+      content: 'Ejercicios para realizar desde casa, con elementos del hogar, que nos ayudaran a mantener la elasticidad y la salud de nuestros musculos.',
       imageSrc: '/path/to/image5.jpg'
     },
     {
       title: 'Plan adaptado a deportistas',
       price: '20.000',
       description: 'Superá tus límites',
-      content: 'Este plan está diseñado para deportistas que buscan mejorar su rendimiento en su disciplina específica, con entrenamientos y nutrición adaptados a sus necesidades.',
+      content: 'Haces Algun deporte en especifico? Planifico la rutina para mejorar tu rendimiento y llevarlo a un mejor nivel. Evaluaciones antes y durante la planificacion.',
       imageSrc: '/path/to/image6.jpg'
     },
     {
       title: 'R.P.G (reeducación postural global) + aumento de masa muscular',
       price: '20.000',
       description: 'Superá tus límites',
-      content: 'Combina la reeducación postural global con un plan de aumento de masa muscular para corregir tu postura mientras ganas fuerza y tamaño muscular.',
+      content: 'Programa de entrenamiento basado en la posibilidad de adecuar el entrenamiento a cada persona y a su problematica especifica, RPG puede ser aplicada en un gran numero de casos siendo una herramienta eficaz en el tratamiento y corrección de alteraciones postulares, rigidez corporal y situaciones dolor. Agregando a este programa una planificacion de aumento de masa muscular completamente especifico para vos.',
       imageSrc: '/path/to/image7.jpg'
-    },
-    {
-      title: 'R.P.G (reeducación postural global) + tonificación',
-      price: '20.000',
-      description: 'Superá tus límites',
-      content: 'Este plan combina la reeducación postural global con ejercicios de tonificación para mejorar tu postura y definir tu musculatura.',
-      imageSrc: '/path/to/image8.jpg'
-    },
+    }
   ];
 
   const handleSelectPlan = (plan) => {
