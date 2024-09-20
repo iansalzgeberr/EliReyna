@@ -3,10 +3,10 @@ import './Estilos.css';
 
 const Testimonios = () => {
   const testimoniosData = [
-    { usuario: '@nombre_usuario', texto: '“Cuando llegue a Legion Fitness, me senti muy bien, fui motivada desde el dia uno. Eli es una gran profesional, muy dedicada a su trabajo y sobre todo siempre con muy buena onda, la verdad estoy agradecida ya que gracias a ella aprendi a entrenar y vi muy buenos resultados”' },
-    { usuario: '@nombre_usuario', texto: '“Recomiendo muchisimo su trabajo y aseguro mucho exito realizando sus rutinas.”' },
-    { usuario: '@nombre_usuario', texto: '“Lucre No solo es una Excelente profesional sino que también es una gran persona, siempre mostrando amor, paciencia y dedicación por lo que hace. Desde que comencé a entrenar...”' },
-    { usuario: '@nombre_usuario', texto: '“Una entrenadora excelente!!! A tu lado logré llevar mi físico y cabeza a una mejor versión... aprendí mucho y sobre todo admiro profundamente tu trabajo”' }
+    { usuario: '@Leonardo Lorens', texto: '“Cuando llegue a Legion Fitness, me senti muy bien, fui motivada desde el dia uno. Eli es una gran profesional, muy dedicada a su trabajo y sobre todo siempre con muy buena onda, la verdad estoy agradecida ya que gracias a ella aprendi a entrenar y vi muy buenos resultados”' },
+    { usuario: '@Milagros Veyrand', texto: '“Eli representa un reto, es la persona que te motiva y te guía a que puedas seguir mejorando y evolucionado en el entrenamiento para cumplir tus objetivos! Excelente persona y profesional, además de amiga.”' },
+    { usuario: '@Ignacio Delgado', texto: '“Eli es una excelente entrenadora, me enseñó a corregir técnica para lograr mejores resultados además de ser una ayuda en cuestiones diariarias que hacen al logro de los objetivos es una persona con paciencia y dedicación  por su trabajo.”' },
+    { usuario: '@Juan Chelini', texto: '“Una entrenadora excelente!!! A tu lado logré llevar mi físico y cabeza a una mejor versión... aprendí mucho y sobre todo admiro profundamente tu trabajo”' }
   ];
 
   return (
