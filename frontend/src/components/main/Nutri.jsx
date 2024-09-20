@@ -22,7 +22,7 @@ const Nutri = () => {
                 </div>
             </div>
             <div className="nutri-image">
-                <img src="../../../images/NUTRICIONISTA.png" alt="Nutricionista" />
+                <img src="../../../images/Nutricionista.jpg" alt="Nutricionista" />
             </div>
         </div>
     );

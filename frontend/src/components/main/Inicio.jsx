@@ -8,8 +8,7 @@ const Inicio = () => {
         <h1 className="title mb-4">Transforma tu cuerpo</h1>
         <p className="subtitle mb-4">Descubre tu mejor versión con nuestros recursos para tu cuerpo ideal</p>
         <div className="d-flex justify-content-center">
-          <a href="#comenzar" className="btn btn-warning btn-lg btn-spacing">Comenzar</a>
-          <a href="#planes" className="btn btn-outline-warning btn-lg btn-spacing">Ver planes</a>
+          <a href="#planes" className="btn btn-warning btn-lg btn-spacing">Ver Planes</a>
         </div>
       </div>
     </div>

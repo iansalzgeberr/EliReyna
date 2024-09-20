@@ -14,7 +14,7 @@ const SobreMi = () => {
             <div className="content-container">
                 <div className="image-container">
                     <img
-                        src={imageUrl}
+                        src={'../../../images/Eli9.jpg'}
                         alt="Entrenadora"
                         style={{ width: "100%", borderRadius: "10px" }}
                     />
