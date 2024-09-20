@@ -434,6 +434,32 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra a la imagen */
 }
 
+.social-media a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: inherit; /* Mantener el color del texto original */
+}
+
+.instagram i, .phone i {
+  color: #ffffff; /* Color por defecto en blanco */
+}
+
+.instagram:hover i, .phone:hover i {
+  color: #ffc605; /* Cambiar el color a amarillo en hover */
+}
+
+.instagram span, .phone span {
+  color: #ffffff; /* Color de texto por defecto */
+}
+
+.instagram:hover span, .phone:hover span {
+  color: #ffc605; /* Cambiar texto a amarillo en hover */
+}
+
+/* Asegurarse de que el subrayado se elimine también en hover */
+.instagram:hover, .phone:hover {
+  text-decoration: none; /* No subrayar tampoco al hacer hover */
+}
+
 @media (max-width: 768px) {
   .nutri-container {
     flex-direction: column;
