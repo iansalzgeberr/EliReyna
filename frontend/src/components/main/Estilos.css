@@ -10,14 +10,15 @@ body {
 }
 
 .inicio-container {
-    background-image: url('../../../images/background.jpg'); /* Asegúrate de poner la ruta correcta a tu imagen */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url('../../../images/portada.jpg'); /* Asegúrate de poner la ruta correcta a tu imagen */
+  background-size: cover;
+  background-position: center 30%; /* Ajusta el valor para desplazar la imagen hacia abajo */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 /* src/components/main/Estilos.css */
 
 .btn-warning {
