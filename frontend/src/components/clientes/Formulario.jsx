@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Formulario.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import EliReynaLogo from '../../images/EliReynaLogo.png';
+import EliReynaLogo from '../../../images/logo_negro.png';
 
 const Formulario = () => {
     const [formData, setFormData] = useState({
