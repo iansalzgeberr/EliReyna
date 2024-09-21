@@ -3,6 +3,14 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Popup from './Popup';
 
+// Importación de las imágenes
+import Eli2 from '../../../images/Eli2.jpg';
+import Eli3 from '../../../images/Eli3.jpg';
+import Eli4 from '../../../images/Eli4.jpg';
+import Eli5 from '../../../images/Eli5.jpg';
+import Eli6 from '../../../images/Eli6.jpg';
+import Eli7 from '../../../images/Eli7.jpg';
+
 const Planes = () => {
   const [selectedPlan, setSelectedPlan] = useState(null);
   const navigate = useNavigate();
@@ -12,37 +20,37 @@ const Planes = () => {
       title: 'Aumento masa muscular',
       description: 'Superá tus límites',
       content: 'Desarrollo y aplicacion de un programa de entrenamiento para mejorar y aumentar tu masa muscular. Viendo los progresdos dia a dia y ayudandote a tener mejores ganancias musculares.',
-      imageSrc: '../../../images/Eli2.jpg'
+      imageSrc: Eli2
     },
     {
       title: 'Descenso de peso',
       description: 'Superá tus límites',
       content: 'Programa Descenso de Peso especialmente enfocado para que logres el maximo resultado posible de forma armonica y sostenible, sustentado por una larga trayectoria de exito en programas eficaces.',
-      imageSrc: '../../../images/Eli3.jpg'
+      imageSrc: Eli3
     },
     {
       title: 'Entrenamiento En Casa',
       description: 'Superá tus límites',
       content: 'Plan de Entrenamiento planificado para que entrenes como en tu casa. En base a tus objetivos planificamos tu rutina diaria acorde a tu espacio y elementos.',
-      imageSrc: '../../../images/Eli4.jpg'
+      imageSrc: Eli4
     },
     {
       title: 'Adulto mayores',
       description: 'Superá tus límites',
       content: 'Ejercicios para realizar desde casa, con elementos del hogar, que nos ayudaran a mantener la elasticidad y la salud de nuestros musculos.',
-      imageSrc: '../../../images/Eli5.jpg'
+      imageSrc: Eli5
     },
     {
       title: 'Plan adaptado a deportistas',
       description: 'Superá tus límites',
       content: 'Haces Algun deporte en especifico? Planifico la rutina para mejorar tu rendimiento y llevarlo a un mejor nivel. Evaluaciones antes y durante la planificacion.',
-      imageSrc: '../../../images/Eli6.jpg'
+      imageSrc: Eli6
     },
     {
       title: 'R.P.G (reeducación postural global) + aumento de masa muscular',
       description: 'Superá tus límites',
       content: 'Programa de entrenamiento basado en la posibilidad de adecuar el entrenamiento a cada persona y a su problematica especifica, RPG puede ser aplicada en un gran numero de casos siendo una herramienta eficaz en el tratamiento y corrección de alteraciones postulares, rigidez corporal y situaciones dolor. Agregando a este programa una planificacion de aumento de masa muscular completamente especifico para vos.',
-      imageSrc: '../../../images/Eli7.jpg'
+      imageSrc: Eli7
     }
   ];
 
@@ -68,11 +76,9 @@ const Planes = () => {
               <div className="card-body d-flex flex-column justify-content-between" style={{ background: 'linear-gradient(90deg, #1c1c1c, #000000)', borderRadius: '10px' }}>
                 <div className="text-left">
                   <h5 className="card-title mb-3" style={{ fontWeight: 'bold' }}>{plan.title}</h5>
-                  <h6 className="card-subtitle mb-3" style={{ fontSize: '1.5em', fontWeight: 'bold' }}>{plan.price}</h6>
                   <p className="card-text" style={{ color: '#888888' }}>{plan.description}</p>
                 </div>
-                <button className="btn btn-outline-warning mt-3" style={{ color: '#FFFFFF', borderColor: '#FFC605' }} onClick={() => 
-                handleSelectPlan(plan)}>Select Plan</button>
+                <button className="btn btn-outline-warning mt-3" style={{ color: '#FFFFFF', borderColor: '#FFC605' }} onClick={() => handleSelectPlan(plan)}>Seleccionar Plan</button>
               </div>
             </div>
           </div>
@@ -84,7 +90,7 @@ const Planes = () => {
           content={selectedPlan.content}
           imageSrc={selectedPlan.imageSrc}
           onClose={handleClosePopup}
-          onAcquirePlan={handleAcquirePlan} // Añadir esta prop para manejar la redirección
+          onAcquirePlan={handleAcquirePlan} // Maneja la redirección
         />
       )}
     </div>
