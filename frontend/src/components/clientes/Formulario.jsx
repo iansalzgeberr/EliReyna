@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Formulario.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import EliReynaLogo from '../../images/EliReynaLogo.png';
+
 const Formulario = () => {
     const [formData, setFormData] = useState({
         nombre: '',
@@ -56,7 +58,7 @@ const Formulario = () => {
     return (
         <div className="form-container">
             <header className="form-header">
-                <img src="../../../images/logo_negro.png" alt="Eli Reyna Logo" className="form-logo" />
+                <img src={EliReynaLogo} alt="Eli Reyna Logo" className="form-logo" />
                 <p className="form-subtitle"><strong>Entrenamiento Personalizado</strong></p>
             </header>
             <div className="form-body p-4 bg-white shadow rounded">

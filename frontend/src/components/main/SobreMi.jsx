@@ -1,9 +1,11 @@
+// src/components/main/SobreMi.jsx
 import React from "react";
 import "./Estilos.css";
 
-const SobreMi = () => {
-    const imageUrl = 'https://img.freepik.com/foto-gratis/hombre-tiro-completo-haciendo-burpees-entrenador_23-2149445904.jpg';
+// Importación de la imagen local
+import Eli9 from '../../../images/Eli9.jpg';
 
+const SobreMi = () => {
     return (
         <div className="sobre-mi-container">
             <div className="title-container">
@@ -13,8 +15,9 @@ const SobreMi = () => {
             </div>
             <div className="content-container">
                 <div className="image-container">
+                    {/* Usar la imagen importada directamente */}
                     <img
-                        src={'../../../images/Eli9.jpg'}
+                        src={Eli9}
                         alt="Entrenadora"
                         style={{ width: "100%", borderRadius: "10px" }}
                     />
@@ -23,12 +26,11 @@ const SobreMi = () => {
                     <p>
                         ¡Hola! Soy Eli Reyna, entrenadora de fitness certificada. Mi
                         pasión es ayudarte a alcanzar tus metas de salud y bienestar a
-                        través de planes de entrenamiento personalizados. 
-
+                        través de planes de entrenamiento personalizados.
                     </p>
                     <p>
                         Con años de experiencia, te guiaré hacia un estilo de vida activo y saludable,
-                        no solo físicamente, sino también emocionalmente. 
+                        no solo físicamente, sino también emocionalmente.
                     </p>
                     <p className="ultimo-parrafo">
                         ¡Espero ser tu compañera en este emocionante viaje hacia una vida más saludable!

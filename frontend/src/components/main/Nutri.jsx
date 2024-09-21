@@ -1,5 +1,9 @@
+// src/components/main/Nutri.jsx
 import React from "react";
 import "./Estilos.css";
+
+// Importación de la imagen local
+import Nutricionista from '../../../images/Nutricionista.jpg';
 
 const Nutri = () => {
     return (
@@ -22,7 +26,8 @@ const Nutri = () => {
                 </div>
             </div>
             <div className="nutri-image">
-                <img src="../../../images/Nutricionista.jpg" alt="Nutricionista" />
+                {/* Usar la imagen importada directamente */}
+                <img src={Nutricionista} alt="Nutricionista" />
             </div>
         </div>
     );
