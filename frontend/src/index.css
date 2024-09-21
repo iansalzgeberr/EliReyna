@@ -1,5 +1,6 @@
 body {
     background-color: #000000;
     color: #FFFFFF; /* Color de letra blanco */
+    overflow-x: hidden;
   }
   
