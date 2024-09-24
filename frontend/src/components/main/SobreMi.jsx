@@ -24,9 +24,13 @@ const SobreMi = () => {
                 </div>
                 <div className="text-container">
                     <p>
-                        ¡Hola! Soy Eli Reyna, entrenadora de fitness certificada. Mi
-                        pasión es ayudarte a alcanzar tus metas de salud y bienestar a
-                        través de planes de entrenamiento personalizados.
+                    ¡Hola! Soy Eli Reyna, entrenadora de fitness certificada y
+                    profesora de educación física. Mi pasión es ayudarte a
+                    alcanzar tus metas de salud y bienestar a través de planes
+                    de entrenamiento personalizados. Además, cuento con cursos
+                    de instructora en musculación y preparadora física, entre 
+                    tros, que me permiten brindarte un acompañamiento integral
+                    en tu proceso.
                     </p>
                     <p>
                         Con años de experiencia, te guiaré hacia un estilo de vida activo y saludable,
