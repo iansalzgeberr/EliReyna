@@ -197,52 +197,59 @@ body {
 .content-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 20px; /* Reduce la separación entre secciones */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
   .content-container {
-      flex-direction: row;
-      align-items: flex-start;
+    flex-direction: row; /* Coloca la imagen y el texto en fila en pantallas grandes */
+    align-items: center; /* Centra verticalmente en pantallas grandes */
+    justify-content: center; /* Centra horizontalmente el texto y la imagen */
   }
 }
 
+/* Contenedor de la imagen */
 .image-container {
   flex: 1;
-  padding-right: 10px; /* Reduce el padding derecho */
-  padding-left: 10px;  /* Reduce el padding izquierdo */
+  padding-right: 10px;
+  padding-left: 10px;
   width: 100%;
   max-width: 400px;
 }
 
 @media (min-width: 768px) {
   .image-container {
-      width: auto;
-      padding-left: 0; /* Elimina el padding izquierdo en pantallas grandes */
+    width: auto;
+    padding-left: 0;
   }
 }
 
+/* Contenedor de texto */
 .text-container {
   flex: 2;
   font-size: 1.2rem;
   line-height: 1.5;
-  padding-left: 15px; /* Reduce el padding izquierdo */
-  padding-top: 10px; /* Reduce el padding superior */
-  margin-top: 2rem; /* Reduce el margen superior */
-}
-
-.ultimo-parrafo{
-  margin-top: 1rem; /* Reduce el margen superior */
+  padding-left: 15px;
+  padding-top: 10px;
+  margin-top: 0;
+  text-align: left; /* Alineación del texto */
 }
 
 @media (min-width: 768px) {
   .text-container {
-      padding-top: 0;
-      font-size: 1.4rem;
-      margin-top: 0; /* Elimina el margen superior en pantallas grandes */
+    padding-top: 0;
+    font-size: 1.4rem;
+    margin-top: 0;
+    text-align: left; /* Mantener alineación izquierda en pantallas grandes */
   }
 }
+.ultimo-parrafo{
+  margin-top: 1rem; /* Reduce el margen superior */
+}
+
+
 
 .title {
   color: #fff; /* Color blanco */
