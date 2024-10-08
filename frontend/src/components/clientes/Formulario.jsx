@@ -34,7 +34,7 @@ const Formulario = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const whatsappUrl = `https://wa.me/+5493517569078?text=${
+        const whatsappUrl = `https://wa.me/+5493517530081?text=${
             encodeURIComponent('Nombre y apellido: ' + formData.nombre + '\n\n') +
             encodeURIComponent('Edad: ' + formData.edad + '\n\n') +
             encodeURIComponent('¿Alguna vez ha sido diagnosticado con una enfermedad cardíaca o le han recomendado que solamente realice actividad física bajo supervisión médica?: ' + formData.enfermedadCardiaca + '\n\n') +
