@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/logo.png'; // Asegúrate de poner la ruta correcta a tu logo
+import logo from '../../images/008_logo.png'; // Asegúrate de poner la ruta correcta a tu logo
 import './NavBar.css'; // Importa el archivo CSS
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importar Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importar Bootstrap JS

@@ -11,11 +11,10 @@ const Inicio = () => {
         <h1 className="title mb-4">Transforma tu cuerpo</h1>
         <p className="subtitle mb-4">Descubre tu mejor versión con nuestros recursos para tu cuerpo ideal</p>
         <div className="d-flex justify-content-center">
-          <a href="#planes" className="btn btn-warning btn-lg btn-spacing">Ver Planes</a>
-          {/* Cambia aquí el número de WhatsApp con el mensaje */}
+          <a href="#planes" className="custom-btn btn-lg btn-spacing">Ver Planes</a>
           <a
             href={`https://wa.me/+5493517530081?text=${encodeURIComponent(mensaje)}`}
-            className="btn btn-warning btn-lg btn-spacing"
+            className="custom-btn btn-lg btn-spacing"
             target="_blank"
             rel="noopener noreferrer"
           >

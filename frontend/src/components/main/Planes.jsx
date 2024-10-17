@@ -68,7 +68,7 @@ const Planes = () => {
 
   return (
     <div className="container text-left my-5" style={{ backgroundColor: '#000000', color: '#FFFFFF' }}>
-      <h2 className="mb-4">Suscribite a nuestros <span style={{ color: '#FFC605' }}>Planes</span></h2>
+      <h2 className="mb-4">Suscribite a nuestros <span style={{ color: '#F6BDD0' }}>Planes</span></h2>
       <div className="row">
         {plans.map((plan, index) => (
           <div key={index} className="col-md-4 mb-4">
@@ -78,7 +78,7 @@ const Planes = () => {
                   <h5 className="card-title mb-3" style={{ fontWeight: 'bold' }}>{plan.title}</h5>
                   <p className="card-text" style={{ color: '#888888' }}>{plan.description}</p>
                 </div>
-                <button className="btn btn-outline-warning mt-3" style={{ color: '#FFFFFF', borderColor: '#FFC605' }} onClick={() => handleSelectPlan(plan)}>Seleccionar Plan</button>
+                <button className="btn mt-3" style={{ color: '#FFFFFF', borderColor: '#F6BDD0' }} onClick={() => handleSelectPlan(plan)}>Seleccionar Plan</button>
               </div>
             </div>
           </div>

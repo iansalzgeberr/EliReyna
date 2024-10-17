@@ -1,7 +1,7 @@
 // src/components/main/Popup.jsx
 import React from 'react';
 import './Estilos.css';
-import logo from '../../../images/logo.png'; // Asegúrate de usar la ruta correcta al logo
+import logo from '../../../images/008_logo.png'; // Asegúrate de usar la ruta correcta al logo
 
 const Popup = ({ title, content, imageSrc, onClose, onAcquirePlan }) => {
     return (

@@ -22,18 +22,13 @@ body {
 /* src/components/main/Estilos.css */
 
 .btn-warning {
-  background-color: #ffc605;
-  border-color: #ffc605;
+  background-color: #F6BDD0;
+  border-color: #F6BDD0;
 }
 
-.btn-outline-warning {
-  color: #ffc605;
-  border-color: #ffc605;
-}
-
-.btn-warning:hover, .btn-outline-warning:hover {
-  background-color: #e5b600;
-  border-color: #e5b600;
+.btn-warning:hover, .btn:hover {
+  background-color: #F6BDD0;
+  border-color: #F6BDD0;
 }
 
 /* Añadir margen a los botones */
@@ -67,18 +62,18 @@ body {
 }
 
 .btn-warning {
-    background-color: #ffc605;
-    border-color: #ffc605;
+    background-color: #F6BDD0;
+    border-color: #F6BDD0;
 }
 
 .btn-outline-warning {
-    color: #ffc605;
-    border-color: #ffc605;
+    color: #F6BDD0;
+    border-color: #F6BDD0;
 }
 
-.btn-warning:hover, .btn-outline-warning:hover {
-    background-color: #e5b600;
-    border-color: #e5b600;
+.btn-warning:hover, .btn:hover {
+    background-color: #F6BDD0;
+    border-color: #F6BDD0;
 }
 
 /* src/components/main/Planes.css */
@@ -99,7 +94,7 @@ body {
 }
 
 .highlight {
-  color: #ffc605;
+  color: #F6BDD0;
 }
 
 .planes-row {
@@ -147,13 +142,13 @@ body {
 }
 
 .btn-outline-warning {
-  color: #ffc605; /* Texto del botón en color amarillo */
-  border-color: #ffc605; /* Borde del botón en color amarillo */
+  color: #F6BDD0; /* Texto del botón en color amarillo */
+  border-color: #F6BDD0; /* Borde del botón en color amarillo */
   background-color: #000; /* Fondo del botón en negro */
 }
 
 .btn-outline-warning:hover {
-  background-color: #ffc605; /* Fondo del botón en amarillo al pasar el mouse */
+  background-color: #F6BDD0; /* Fondo del botón en amarillo al pasar el mouse */
   color: #000; /* Texto del botón en negro al pasar el mouse */
 }
 
@@ -256,7 +251,7 @@ body {
 }
 
 .highlighted-text {
-  color: #ffc605; /* Color amarillo */
+  color: #F6BDD0; /* Color amarillo */
 }
 
 
@@ -285,7 +280,7 @@ body {
 
 /* Resaltar texto en el título */
 .highlight {
-  color: #ffc605; /* Color amarillo */
+  color: #F6BDD0; /* Color amarillo */
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
 }
@@ -332,7 +327,7 @@ body {
 /* Añadir punto al inicio de cada elemento de la lista */
 .razones-text li:before {
   content: "•";
-  color: #ffc605;
+  color: #F6BDD0;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -405,7 +400,7 @@ body {
 }
 
 .highlight {
-  color: #ffc605; /* Color amarillo */
+  color: #F6BDD0; /* Color amarillo */
 }
 
 .social-media {
@@ -453,7 +448,7 @@ body {
 }
 
 .instagram:hover i, .phone:hover i {
-  color: #ffc605; /* Cambiar el color a amarillo en hover */
+  color: #F6BDD0; /* Cambiar el color a amarillo en hover */
 }
 
 .instagram span, .phone span {
@@ -461,7 +456,7 @@ body {
 }
 
 .instagram:hover span, .phone:hover span {
-  color: #ffc605; /* Cambiar texto a amarillo en hover */
+  color: #F6BDD0; /* Cambiar texto a amarillo en hover */
 }
 
 /* Asegurarse de que el subrayado se elimine también en hover */
@@ -507,7 +502,7 @@ body {
   margin-bottom: 40px;
 }
 .highlight {
-  color: #ffc605;
+  color: #F6BDD0;
 }
 
 /* Grid de testimonios */
@@ -572,7 +567,7 @@ body {
 }
 
 .icono:hover {
-  color: #ffc605; /* Cambiar el color al pasar el mouse */
+  color: #F6BDD0; /* Cambiar el color al pasar el mouse */
 }
 
 /* src/components/main/Estilos.css */
@@ -656,7 +651,7 @@ body {
 }
 
 .popup-button {
-  background: linear-gradient(to right, #F66844, #FF921B);
+  background: #F6BDD0;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -669,14 +664,14 @@ body {
 }
 
 .popup-button:hover {
-  background-color: #D94715;
+  background-color: #000000;
 }
 
 .close-button {
   position: absolute;
   top: 20px;
   right: 10px;
-  background: #ffc605;
+  background: #F6BDD0;
   border-radius: 20%;
   font-size: 24px;
   color: white;
@@ -781,4 +776,24 @@ body {
     font-size: 14px;
     margin-bottom: 20px; /* Aumenta un poco el espacio entre texto e imagen */
   }
+}
+
+/* Estilos para los botones personalizados */
+.custom-btn {
+  background-color: #F6BDD0; /* Color de fondo */
+  color: #FFFFFF; /* Color del texto */
+  border: 2px solid #F6BDD0; /* Borde del mismo color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Animación suave */
+}
+
+/* Hover */
+.custom-btn:hover {
+  background-color: #FFFFFF; /* Cambia el fondo a blanco al hacer hover */
+  color: #F6BDD0; /* El texto cambia a rosa al hacer hover */
+  border-color: #F6BDD0; /* Mantén el borde rosa */
+  text-decoration: none;
 }

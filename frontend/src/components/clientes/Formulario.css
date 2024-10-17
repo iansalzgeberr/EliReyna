@@ -5,7 +5,7 @@
 }
 
 .form-header {
-    background-color: #FFC605;
+    background-color: #F6BDD0;
     padding: 10px;
     text-align: center;
 }
@@ -32,8 +32,8 @@
 }
 
 .btn-warning {
-    background-color: #FFC605;
-    border-color: #FFC605;
+    background-color: #F6BDD0;
+    border-color: #F6BDD0;
 }
 
 #formulario {
