@@ -3,7 +3,7 @@ import React from "react";
 import "./Estilos.css";
 
 // Importación de la imagen local
-import Eli9 from '../../../images/Eli9.jpg';
+import ELI_SobreMI2 from '../../../images/ELI_SobreMI2.jpg';
 
 const SobreMi = () => {
     return (
@@ -17,7 +17,7 @@ const SobreMi = () => {
                 <div className="image-container">
                     {/* Usar la imagen importada directamente */}
                     <img
-                        src={Eli9}
+                        src={ELI_SobreMI2}
                         alt="Entrenadora"
                         style={{ width: "100%", borderRadius: "10px" }}
                     />
