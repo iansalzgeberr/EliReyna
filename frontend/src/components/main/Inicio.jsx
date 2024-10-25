@@ -8,8 +8,8 @@ const Inicio = () => {
   return (
     <div className="inicio-container">
       <div className="content text-center p-5 rounded">
-        <h1 className="title mb-4">Transforma tu cuerpo</h1>
-        <p className="subtitle mb-4">Descubre tu mejor versión con nuestros recursos para tu cuerpo ideal</p>
+        <h1 className="title mb-4">Transforma tu fuerza femenina</h1>
+        <p className="subtitle mb-4">Descubre la mejor versión de ti con nuestros recursos diseñados para mujeres</p>
         <div className="d-flex justify-content-center">
           <a href="#planes" className="custom-btn btn-lg btn-spacing">Ver Planes</a>
           <a
