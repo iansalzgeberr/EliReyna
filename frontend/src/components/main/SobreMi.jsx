@@ -29,7 +29,7 @@ const SobreMi = () => {
                     alcanzar tus metas de salud y bienestar a través de planes
                     de entrenamiento personalizados. Además, cuento con cursos
                     de instructora en musculación y preparadora física, entre 
-                    tros, que me permiten brindarte un acompañamiento integral
+                    otros, que me permiten brindarte un acompañamiento integral
                     en tu proceso.
                     </p>
                     <p>
