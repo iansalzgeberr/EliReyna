@@ -19,7 +19,7 @@ const Planes = () => {
     {
       title: 'Aumento masa muscular',
       description: 'Superá tus límites',
-      content: 'Desarrollo y aplicacion de un programa de entrenamiento para mejorar y aumentar tu masa muscular. Viendo los progresdos dia a dia y ayudandote a tener mejores ganancias musculares.',
+      content: 'Desarrollo y aplicación de un programa de entrenamiento para mejorar y aumentar tu masa muscular, viendo los progresos día a día y ayudándote a tener mejores ganancias musculares.',
       imageSrc: Eli2
     },
     {
