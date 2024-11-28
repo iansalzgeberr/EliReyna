@@ -76,21 +76,23 @@ body {
     border-color: #F6BDD0;
 }
 
-/* src/components/main/Planes.css */
 .planes-container {
   background-color: #000;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  margin: 20px auto; /* Centrar el contenedor */
+  max-width: 1200px; /* Limitar el ancho máximo del contenedor */
 }
 
 .planes-title {
-  font-size: 1.9rem;
+  font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center; /* Centrar el título */
+}
+
+.mb-4 {
+  text-align: center;
 }
 
 .highlight {
@@ -99,8 +101,8 @@ body {
 
 .planes-row {
   display: flex;
-  flex-wrap: wrap; /* Permitir que las cards se envuelvan a la siguiente línea */
-  gap: 10px; /* Espacio entre las cards */
+  flex-wrap: wrap; /* Permitir que las cards se envuelvan */
+  gap: 20px; /* Espacio entre las cards */
   justify-content: center; /* Centrar las cards horizontalmente */
 }
 
@@ -108,49 +110,51 @@ body {
   background: #070707; /* Fondo de la card */
   border: 1px solid #fff; /* Borde blanco */
   border-radius: 10px;
-  text-align: center; /* Alinear el texto al centro */
-  flex: 1 1 calc(33.33% - 50px); /* Tres cards por fila con espacio */
-  max-width: calc(33.33% - 20px); /* Ajustar el ancho máximo */
-  margin: 10px; /* Añadir margen para separación */
+  text-align: center;
+  flex: 1 1 calc(30% - 20px); /* Tres cards por fila con espacio */
+  max-width: calc(30% - 20px); /* Ajustar el ancho máximo */
+  margin: 10px; /* Espaciado alrededor de cada tarjeta */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Añadir sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px); /* Efecto al pasar el mouse */
+  box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3); /* Sombra al hover */
 }
 
 .plan-card .card-body {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinear contenido al centro */
-  padding: 20px;
+  align-items: center;
 }
 
 .plan-card .card-title {
   margin-bottom: 10px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #fff; /* Color del título en blanco */
-}
-
-.plan-card .card-subtitle {
-  font-size: 2rem; /* Tamaño de fuente mayor para el precio */
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #fff; /* Color del precio en blanco */
+  color: #fff; /* Color del título */
 }
 
 .plan-card .card-text {
   font-size: 1rem;
-  color: #888888; /* Color de la descripción en gris */
-  margin-bottom: 15px;
+  color: #888; /* Texto en gris */
+  margin-bottom: 20px;
 }
 
 .btn-outline-warning {
-  color: #F6BDD0; /* Texto del botón en color amarillo */
-  border-color: #F6BDD0; /* Borde del botón en color amarillo */
-  background-color: #000; /* Fondo del botón en negro */
+  color: #F6BDD0; /* Color del texto */
+  border-color: #F6BDD0; /* Borde */
+  background-color: transparent; /* Fondo transparente */
+  transition: all 0.3s ease;
 }
 
 .btn-outline-warning:hover {
-  background-color: #F6BDD0; /* Fondo del botón en amarillo al pasar el mouse */
-  color: #000; /* Texto del botón en negro al pasar el mouse */
+  background-color: #F6BDD0; /* Fondo al pasar el mouse */
+  color: #000; /* Texto al pasar el mouse */
 }
+
 
 /* Media Queries para Responsividad */
 @media (max-width: 1200px) {
@@ -266,7 +270,8 @@ body {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinear contenido a la izquierda */
+  align-items: center; /* Alinear contenido a la izquierda */
+
 }
 
 /* Título del componente Razones */
@@ -372,8 +377,9 @@ body {
 /* src/components/Estilos.css */
 .nutri-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 30px;
   background-color: #000;
   color: #fff;
@@ -390,13 +396,15 @@ body {
   padding-right: 20px; /* Espacio entre el texto y la imagen */
 }
 
+
 .nutri-text h2 {
-  font-size: 1.9rem; /* Aumentar el tamaño del texto */
+  font-size: 1.9rem; /* Tamaño del texto */
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   color: #fff;
-  text-align: left;
+  text-align: center; /* Centrar el texto */
   margin-bottom: 20px; /* Espacio debajo del título */
+  line-height: 1.5; /* Espaciado entre líneas para mayor legibilidad */
 }
 
 .highlight {
@@ -406,13 +414,17 @@ body {
 .social-media {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centrar los elementos horizontalmente */
+  justify-content: center; /* Centrar los elementos verticalmente */
+  gap: 15px; /* Espacio uniforme entre las líneas */
 }
 
 .instagram, .phone {
   display: flex;
   align-items: center;
-  margin-bottom: 15px; /* Espacio entre los elementos */
+  justify-content: center; /* Centrar el contenido de cada fila */
   font-size: 1.2rem; /* Ajustar el tamaño del texto */
+  gap: 10px; /* Espacio entre el icono y el texto */
 }
 
 .instagram i, .phone i {
@@ -489,6 +501,9 @@ body {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Título */

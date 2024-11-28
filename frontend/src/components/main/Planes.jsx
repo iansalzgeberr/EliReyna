@@ -68,7 +68,9 @@ const Planes = () => {
 
   return (
     <div className="container text-left my-5" style={{ backgroundColor: '#000000', color: '#FFFFFF' }}>
-      <h2 className="mb-4">Suscribite a nuestros <span style={{ color: '#F6BDD0' }}>Planes</span></h2>
+      <h2 className="mb-4">
+        Suscribite a nuestros <span style={{ color: '#F6BDD0' }}>Planes
+      </span></h2>
       <div className="row">
         {plans.map((plan, index) => (
           <div key={index} className="col-md-4 mb-4">

@@ -9,7 +9,7 @@ const Nutri = () => {
     return (
         <div className="nutri-container">
             <div className="nutri-text">
-                <h2>
+                <h2 className="nutri-text-sub2">
                     Trabajando en <span className="highlight">Conjunto</span> Con:
                     <br />
                     Josela Bottarelli
@@ -17,7 +17,7 @@ const Nutri = () => {
                 <div className="social-media">
                     <a className="instagram" href="https://www.instagram.com/joselabottarelli/channel/" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-instagram"></i>
-                        <span><strong>@joselabottarelli</strong></span>
+                        <span className="josela"><strong>@joselabottarelli</strong></span>
                     </a>
                     <a className="phone" href="tel:+5491121854915">
                         <i className="fas fa-phone-alt"></i>
@@ -27,7 +27,6 @@ const Nutri = () => {
             </div>
             <div className="nutri-image">
                 {/* Usar la imagen importada directamente */}
-                <img src={Nutricionista} alt="Nutricionista" />
             </div>
         </div>
     );
