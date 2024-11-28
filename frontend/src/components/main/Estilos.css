@@ -413,18 +413,30 @@ body {
 
 .social-media {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centrar los elementos horizontalmente */
-  justify-content: center; /* Centrar los elementos verticalmente */
-  gap: 15px; /* Espacio uniforme entre las líneas */
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.social-list {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Espacio entre los elementos de la lista */
+  padding: 0;
+  margin: 0;
+}
+.social-list li {
+  display: inline-flex;
+  align-items: center;
 }
 
 .instagram, .phone {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centrar el contenido de cada fila */
-  font-size: 1.2rem; /* Ajustar el tamaño del texto */
-  gap: 10px; /* Espacio entre el icono y el texto */
+  text-decoration: none;
+  color: inherit;
+  gap: 10px;
 }
 
 .instagram i, .phone i {
@@ -460,7 +472,7 @@ body {
 }
 
 .instagram:hover i, .phone:hover i {
-  color: #F6BDD0; /* Cambiar el color a amarillo en hover */
+  color: #F6BDD0; /* Cambiar color en hover */
 }
 
 .instagram span, .phone span {
@@ -468,7 +480,7 @@ body {
 }
 
 .instagram:hover span, .phone:hover span {
-  color: #F6BDD0; /* Cambiar texto a amarillo en hover */
+  color: #F6BDD0; /* Cambiar color del texto en hover */
 }
 
 /* Asegurarse de que el subrayado se elimine también en hover */
