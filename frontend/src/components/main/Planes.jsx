@@ -35,7 +35,7 @@ const Planes = () => {
       imageSrc: Eli4
     },
     {
-      title: 'Adulto mayores',
+      title: 'Adultos mayores',
       description: 'Superá tus límites',
       content: 'Ejercicios para realizar desde casa, con elementos del hogar, que nos ayudaran a mantener la elasticidad y la salud de nuestros musculos.',
       imageSrc: Eli5
